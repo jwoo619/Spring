@@ -1,0 +1,39 @@
+package com.javalec.ex;
+
+public class Calculation {
+	
+	private int firstNum = 0;
+	private int secondNum = 0;
+	
+	public int getFirstNum() {
+		return firstNum;
+	}
+	public void setFirstNum(int firstNum) {
+		this.firstNum = firstNum;
+	}
+	public int getSecondNum() {
+		return secondNum;
+	}
+	public void setSecondNum(int secondNum) {
+		this.secondNum = secondNum;
+	}
+	
+	public void add (){
+		
+	}
+	
+	public void sub(){
+		
+	}
+	
+	public void muti(){
+		
+	}
+	
+	public void div(){
+		
+	}
+
+}
+
+
