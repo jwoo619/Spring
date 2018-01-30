@@ -1,0 +1,8 @@
+package springbook.user.domian;
+
+public class User {
+	String id;
+	String name;
+	String password;
+
+}

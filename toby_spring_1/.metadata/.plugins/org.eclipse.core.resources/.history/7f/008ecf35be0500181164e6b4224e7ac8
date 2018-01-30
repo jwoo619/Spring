@@ -1,0 +1,11 @@
+package springbook.user.dao;
+
+import springbook.user.domian.User;
+
+public class UserDao {
+	
+	public void add(User user){
+		
+	}
+
+}
