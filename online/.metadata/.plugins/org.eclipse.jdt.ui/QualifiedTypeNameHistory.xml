@@ -2,4 +2,8 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="org.hibernate.ejb.criteria.FromImplementor"/>
 <fullyQualifiedTypeName name="com.javalec.ex.Calculation"/>
+<fullyQualifiedTypeName name="com.javalec.ex.Calculator"/>
+<fullyQualifiedTypeName name="org.springframework.context.support.AbstractApplicationContext"/>
+<fullyQualifiedTypeName name="org.springframework.context.support.GenericXmlApplicationContext"/>
+<fullyQualifiedTypeName name="com.javalec.ex.MyCalculator"/>
 </qualifiedTypeNameHistroy>

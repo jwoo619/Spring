@@ -1,0 +1,21 @@
+package com.javalec.ex;
+
+public class Calculator {
+	
+	public void addition(int f , int s){
+		System.out.println("addition()");
+		int result = f + s;
+		System.out.println(f + " + " + s + " = " + f+s);
+	}
+	
+	public void subtraction(int f , int s){
+		System.out.println("subtracion()");
+		int result = f - s;
+		System.out.println(f + " - " + s + " = " + f-s);
+	}
+	
+	
+	
+	
+
+}
