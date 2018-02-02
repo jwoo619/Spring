@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
+<aop-project name="dependecy_injection_2"/>
 <aop-project name="My_First_Project"/>
 <aop-project name="dependency injection"/>
 </aop-reference-model>

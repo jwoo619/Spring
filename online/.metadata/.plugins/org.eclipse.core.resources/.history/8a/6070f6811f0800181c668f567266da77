@@ -1,0 +1,10 @@
+package com.javalec.ex;
+
+public class BMICalculator {
+	
+	private double lowWeight;
+	private double normal;
+	private double overWeight;
+	private double obesity;
+
+}

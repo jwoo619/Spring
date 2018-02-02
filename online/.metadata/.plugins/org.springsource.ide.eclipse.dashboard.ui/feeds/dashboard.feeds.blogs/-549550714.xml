@@ -5,7 +5,205 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2018-01-31T12:16:18Z</updated>
+  <updated>2018-02-01T20:46:00Z</updated>
+  <entry>
+    <title>Spring Cloud Data Flow 1.3 GA released</title>
+    <link rel="alternate" href="https://spring.io/blog/2018/02/01/spring-cloud-data-flow-1-3-ga-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Mark Pollack</name>
+    </author>
+    <id>tag:spring.io,2018-02-01:3155</id>
+    <updated>2018-02-01T20:46:00Z</updated>
+    <content type="html">&lt;div class="paragraph"&gt;
+&lt;p&gt;On behalf of the team, I am pleased to announce the general availability of Spring Cloud Data Flow 1.3 across a range of platforms&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Follow the Getting Started guides for &lt;a href="https://docs.spring.io/spring-cloud-dataflow/docs/1.3.0.RELEASE/reference/htmlsingle/#getting-started"&gt;Local Server&lt;/a&gt;,
+&lt;a href="https://docs.spring.io/spring-cloud-dataflow-server-cloudfoundry/docs/1.3.0.RELEASE/reference/htmlsingle/#getting-started"&gt;Cloud Foundry&lt;/a&gt;, and
+&lt;a href="https://docs.spring.io/spring-cloud-dataflow-server-kubernetes/docs/1.3.0.RELEASE/reference/htmlsingle/#kubernetes-getting-started"&gt;Kubernetes&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;h1 id="release-highlights" class="sect0"&gt;&lt;a class="anchor" href="#release-highlights"&gt;&lt;/a&gt;Release Highlights&lt;/h1&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="stream-updates-and-rollback"&gt;&lt;a class="anchor" href="#stream-updates-and-rollback"&gt;&lt;/a&gt;Stream updates and rollback&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;A streaming data pipeline orchestrated as a series of microservice applications has always been the core value of Spring Cloud Data Flow’s design. In Data Flow 1.3 we have provided the ability to update sources, processors, and sinks independently without having to undeploy and redeploy the entire stream.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The stream update and rollback functionality is implemented by delegating the deployment process to a new Spring Cloud project called &lt;a href="http://cloud.spring.io/spring-cloud-skipper/"&gt;Skipper&lt;/a&gt;.  Skipper is a lightweight Spring Boot application, purpose-built to fill this feature gap in Data Flow.  Skipper defines a package format, much like &lt;code&gt;helm&lt;/code&gt; or &lt;code&gt;brew&lt;/code&gt; and can also deploy/undeploy applications to multiple cloud platforms: Local, Cloud Foundry, and Kubernetes.  It uses the same Spring Cloud Deployer libraries that have been part of Data Flow since the beginning.  Recent presentations at SpringOne 2017  &lt;a href="https://content.pivotal.io/springone-platform-2017/continuous-deployment-made-easy-with-skipper-mark-pollack"&gt;introduces Skipper&lt;/a&gt; and the &lt;a href="https://content.pivotal.io/springone-platform-2017/orchestrating-data-microservices-with-spring-cloud-data-flow-mark-pollack"&gt;integration with Data Flow&lt;/a&gt; in more depth.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;When deploying a Stream, Data Flow creates Skipper package describing the Stream and the applications that are part of the Stream definition.  Skipper then deploys the applications to the desired platform.  When requesting  a stream update, only the application or applications that need to be changed are automatically redeployed.  A simple strategy managed by a Spring Statemachine instance performs the update or rollback steps.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Data Flow includes new stream commands to make upgrade and rollback operations.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre&gt;dataflow:&amp;gt;app register --name transform --type processor --uri maven://com.eg:transformer:0.0.1
+
+dataflow:&amp;gt;stream create mystream --definition "jdbc | transform | mongodb"
+
+dataflow:&amp;gt;app register --name transform --type processor --uri maven://com.eg:transformer:0.0.2
+
+dataflow:&amp;gt;stream update mystream --properties “version.transform=0.0.2”
+
+dataflow:&amp;gt;stream rollback mystream&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;In this series of commands, the stream is deployed using version 0.0.1 of the transformer.  The &lt;code&gt;jdbc&lt;/code&gt; and &lt;code&gt;mongodb&lt;/code&gt; source and sink are already registered.  The stream is then updated to use version 0.0.2 of the transformer.  Only the &lt;code&gt;transform&lt;/code&gt; application is updated, with version 0.0.2 being deployed and version 0.0.1 being undeployed. The &lt;code&gt;jdbc&lt;/code&gt; and &lt;code&gt;mongodb&lt;/code&gt; applications are left as-is.  The rollback command does the opposite, bringing the stream back to the state with version 0.0.1 of the transformer.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Note:  To use Data Flow and Skipper, Data Flow’s &lt;a href="https://docs.spring.io/spring-cloud-dataflow/docs/1.3.0.RELEASE/reference/htmlsingle/#getting-started-deploying-spring-cloud-dataflow"&gt;feature toggle for Skipper&lt;/a&gt; must be enabled in both the Data Flow Server and shell.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="javadsl"&gt;&lt;a class="anchor" href="#javadsl"&gt;&lt;/a&gt;JavaDSL&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The &lt;a href="https://github.com/spring-cloud/spring-cloud-dataflow/blob/v1.3.0.RELEASE/spring-cloud-dataflow-rest-client/src/main/java/org/springframework/cloud/dataflow/rest/client/DataFlowTemplate.java"&gt;DataFlowTemplate&lt;/a&gt; class has been the workhorse of deploying streams and tasks programmatically.  However, it is a fairly low level API.  We have added a new fluent style API to create, deploy, or launch streams that is easier to use and also and enables the reuse of &lt;a href="https://github.com/spring-cloud/spring-cloud-dataflow/blob/v1.3.0.RELEASE/spring-cloud-dataflow-rest-client/src/main/java/org/springframework/cloud/dataflow/rest/client/dsl/StreamApplication.java"&gt;StreamApplication&lt;/a&gt; instances across multiple streams.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre&gt;  StreamApplication source = new StreamApplication("http")
+        .addProperty("server.port", 9900);
+
+  StreamApplication processor = new StreamApplication("filter")
+        .addProperty("expression", "payload=='good'");
+
+  StreamApplication sink = new StreamApplication("log");
+
+  Stream simpleStream = streamBuilder.name("simpleStream")
+        .source(source)
+       	.processor(processor)
+        .sink(sink)
+       	.create()
+        .deploy();&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;With a Stream instance you can ask for the stream’s status, undeploy, or destroy the stream.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The &lt;a href="https://docs.spring.io/spring-cloud-dataflow/docs/1.3.0.RELEASE/reference/htmlsingle/#spring-cloud-dataflow-stream-java-dsl"&gt;Java DSL section&lt;/a&gt; of the reference guide provides a more complete introduction to the DSL and the Spring Data Flow Samples repository provides an &lt;a href="https://github.com/spring-cloud/spring-cloud-dataflow-samples/tree/master/javadsl"&gt;example&lt;/a&gt; for you to get started using it in your projects.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="angular-4"&gt;&lt;a class="anchor" href="#angular-4"&gt;&lt;/a&gt;Angular 4&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The Data Flow Dashboards has been updated to take advantage of Angular 4 and align with the &lt;a href="https://github.com/pivotal-cf/pivotal-ui"&gt;Pivotal UI&lt;/a&gt; styling.  A major focus is the consistent use of domain model classes vs. straight JSON strings.  This allows for finer-grained control over the state of the application, e.g. when transitioning from a paginated list to a details page and back.  There is also improved &lt;a href="https://cloud.spring.io/spring-cloud-dataflow-ui/index.html"&gt;documentation for the UI&lt;/a&gt; using &lt;a href="https://compodoc.github.io/website/"&gt;Compodoc&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="fan-in-and-fan-out-visualization"&gt;&lt;a class="anchor" href="#fan-in-and-fan-out-visualization"&gt;&lt;/a&gt;Fan-in and Fan-out visualization&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Fan-in refers to when multiple sources all send data to the same messaging destination.  Fan-out refers to determining the messaging destination at runtime.  This video shows the UI in action for streams with these topologies.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="videoblock"&gt;
+&lt;div class="content"&gt;
+&lt;iframe src="https://www.youtube.com/embed/l8SgHtP5QCI?rel=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;There is a new UI control to directly branch out from a specific node to &lt;a href="https://docs.spring.io/spring-cloud-dataflow/docs/1.3.0.RELEASE/reference/htmlsingle/#spring-cloud-dataflow-stream-dsl-tap"&gt;“tap a stream”&lt;/a&gt; and another new UI control to manage &lt;a href="https://docs.spring.io/spring-cloud-dataflow/docs/1.3.0.RELEASE/reference/htmlsingle/#spring-cloud-dataflow-stream-dsl-named-destinations"&gt;named destinations&lt;/a&gt;.  These new features make building a complex stream topology easier.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="application-registry-improvements"&gt;&lt;a class="anchor" href="#application-registry-improvements"&gt;&lt;/a&gt;Application Registry Improvements&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Users who &lt;a href="https://docs.spring.io/spring-cloud-dataflow/docs/1.3.0.RELEASE/reference/htmlsingle/#spring-cloud-dataflow-register-stream-apps"&gt;register applications as maven artifacts&lt;/a&gt; can now take advantage of the “update-policy” feature to override and refresh Spring Cloud Data Flow’s internal maven cache. For instance, in development, you can continuously resolve SNAPSHOT versions of the maven artifact by setting &lt;code&gt;update-policy=always&lt;/code&gt;, which will force the download of the latest version of the streaming or batch/task application that’s in use in the DSL/Dashboard.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Based on user feedback, applications registered using an &lt;code&gt;http&lt;/code&gt; resource will always be downloaded and not cached. This facilitates the development lifecycle of updating the code, but not the name, of an application’s uberjar hosted on a web server.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;When in Skipper mode, &lt;a href="https://docs.spring.io/spring-cloud-dataflow/docs/1.3.0.RELEASE/reference/htmlsingle/#_register_a_versioned_stream_app"&gt;multiple application versions can be registered&lt;/a&gt;. A default version is used when deploying the stream. You can set the default version using the new command &lt;code&gt;app default&lt;/code&gt;. However, when upgrading an application version in a stream, you must first register it in Data Flow.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="shell-improvements"&gt;&lt;a class="anchor" href="#shell-improvements"&gt;&lt;/a&gt;Shell improvements&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;This release adds “autocompletion” for stream and task/batch names and other metadata. No more guessing - everything is a TAB press away! Check out the following &lt;a href="https://youtu.be/uyN8ttlTvUM"&gt;screencast&lt;/a&gt; to learn more about the advanced shell features, tips, and tricks.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="function-runners"&gt;&lt;a class="anchor" href="#function-runners"&gt;&lt;/a&gt;Function Runners&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Initial support for running functions in SCDF is provided by the use of a function-runner application.  When creating a stream with Spring Cloud Function application, you pass in the function’s classname and jar location.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre&gt;dataflow:&amp;gt; stream create foo --definition "http | function-runner --function.className=com.example.functions.CharCounter --function.location=file:///home/john/myfunction.jar | log"&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;There is a &lt;a href="https://docs.spring.io/spring-cloud-dataflow-samples/docs/current/reference/htmlsingle/#_functions_in_spring_cloud_data_flow"&gt;sample&lt;/a&gt; you can use to experiment with this feature.   Simplifying the deployment of Spring Cloud Functions by not requiring explicit user invocation of the &lt;code&gt;function-runner&lt;/code&gt; is on our roadmap.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="applications"&gt;&lt;a class="anchor" href="#applications"&gt;&lt;/a&gt;Applications&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-cloud-stream-app-starters/mqtt/blob/master/spring-cloud-starter-stream-source-mqtt/README.adoc"&gt;MQTT source&lt;/a&gt; and &lt;a href="https://github.com/spring-cloud-stream-app-starters/mqtt/blob/master/spring-cloud-starter-stream-sink-mqtt/README.adoc"&gt;MQTT sink&lt;/a&gt; applications can interact with IoT devices.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The &lt;a href="https://github.com/spring-cloud-stream-app-starters/tensorflow"&gt;TensorFlow&lt;/a&gt; processor can help with real-time predictive model evaluations. Checkout the &lt;a href="https://github.com/spring-cloud-stream-app-starters/tensorflow/tree/master/spring-cloud-starter-stream-processor-twitter-sentiment"&gt;Twitter-sentiment&lt;/a&gt; model-prediction use of it to get an idea.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Improving upon the data science capabilities, Python-HTTP and Python-Jython processors are now also available.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The new bit.ly links, &lt;a href="http://cloud.spring.io/spring-cloud-stream-app-starters/#stream-app-starters-and-spring-cloud-data-flow-"&gt;Celsius.SR1&lt;/a&gt; and &lt;a href="http://cloud.spring.io/spring-cloud-task-app-starters/#task-app-starters-and-spring-cloud-data-flow-"&gt;Clark.GA&lt;/a&gt;, are available to bulk import and register all the out-of-the-box applications in SCDF.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Simplifying the deployment of Spring Cloud Functions by not requiring explicit user invocation of the &lt;code&gt;function-runner&lt;/code&gt; is on our roadmap.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="spring-cloud-data-flow-tile-for-pcf"&gt;&lt;a class="anchor" href="#spring-cloud-data-flow-tile-for-pcf"&gt;&lt;/a&gt;Spring Cloud Data Flow Tile for PCF&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Spring Cloud Data Flow’s Cloud Foundry tile has been in a closed-BETA state for the last few months. We have iterated on customer and field feedback and it is set to graduate out of BETA to a 1.0 GA status officially. This release automates the provisioning (including the metrics-collector, skipper, database, and message-broker) along with end-to-end OAuth/SSO integration in Cloud Foundry. There are a lot of other value-adds, so stay tuned for a more focused discussion, &lt;a href="http://docs.pivotal.io/scdf/"&gt;documentation&lt;/a&gt;, and pointers to the tile-page in &lt;a href="https://network.pivotal.io/products/p-dataflow"&gt;Pivotal Network&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="helm-chart-for-kubernetes"&gt;&lt;a class="anchor" href="#helm-chart-for-kubernetes"&gt;&lt;/a&gt;Helm Chart for Kubernetes&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;&lt;a href="https://hub.kubeapps.com/charts/incubator/spring-cloud-data-flow"&gt;Spring Cloud Data Flow’s helm-chart&lt;/a&gt; will be updated to the latest 1.3 GA release once the &lt;a href="https://github.com/kubernetes/charts/pull/3525"&gt;pull-request&lt;/a&gt; is merged. With this chart, the latest release of SCDF along with the companion components (metrics-collector, skipper, database, and message-broker) can be automatically provisioned with the following helm-commands.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre&gt;helm repo add incubator http://storage.googleapis.com/kubernetes-charts-incubator
+helm repo update
+helm install --name scdf incubator/spring-cloud-data-flow --set rbac.create=tru&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;As always, we welcome feedback and contributions, so please reach out to us on &lt;a href="https://stackoverflow.com/questions/tagged/spring-cloud-dataflow"&gt;Stackoverflow&lt;/a&gt; or &lt;a href="https://github.com/spring-cloud/spring-cloud-dataflow/issues"&gt;GitHub&lt;/a&gt; or via &lt;a href="https://gitter.im/spring-cloud/spring-cloud-stream"&gt;Gitter&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Please try it out, share your feedback, and consider contributing to the project!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Spring IO Platform Brussels SR7</title>
     <link rel="alternate" href="https://spring.io/blog/2018/01/31/spring-io-platform-brussels-sr7" />
@@ -49,7 +247,7 @@
   &lt;li&gt;Improved actuator JSON structures&lt;/li&gt;
   &lt;li&gt;Helpful security matchers for both Servlet and Reactive deployements&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;This release also picks up &lt;a href="https://github.com/spring-projects/spring-boot/milestone/96?closed=1"&gt;57 issues&lt;/a&gt; that were closed for the &lt;a href="https://spring.io/blog/2018/01/31/spring-boot-1-5-10-available-now"&gt;recent 1.5.10 release&lt;/a&gt;, including an important fix for security vulnerability CVE-2018-1196.&lt;/p&gt;
+&lt;p&gt;This release also picks up &lt;a href="https://github.com/spring-projects/spring-boot/milestone/96?closed=1"&gt;57 issues&lt;/a&gt; that were closed for the &lt;a href="https://spring.io/blog/2018/01/31/spring-boot-1-5-10-available-now"&gt;recent 1.5.10 release&lt;/a&gt;, including an important fix for security vulnerability &lt;a href="https://pivotal.io/security/cve-2018-1196"&gt;CVE-2018-1196&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;For a complete list of changes, and upgrade instructions, see the &lt;a href="https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-2.0.0-RC1-Release-Notes"&gt;Spring Boot 2.0.0.RC1 Release Notes&lt;/a&gt; on the WIKI. &lt;/p&gt;
 &lt;p&gt;To get started with Spring Boot 2.0.0 RC1 and discover those new features, you can easily bootstrap a new project on &lt;a href="https://start.spring.io"&gt;start.spring.io&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Thanks to everyone that has contributed to Spring Boot 2.0 so far!&lt;/p&gt;
@@ -65,7 +263,7 @@
     <id>tag:spring.io,2018-01-30:3151</id>
     <updated>2018-01-31T05:05:00Z</updated>
     <content type="html">&lt;p&gt;Spring Boot 1.5.10 has been released and is is now available from &lt;a href="http://repo.spring.io/release"&gt;repo.spring.io&lt;/a&gt; and &lt;a href="http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.springframework.boot%22"&gt;Maven Central&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;This release includes an important fix for security vulnerability CVE-2018-1196 (disclosure details will be published soon), which can affect anyone using Spring Boot&amp;rsquo;s systemd and init.d service support. It also provides the latest version of Spring Security which fixed &lt;a href="https://pivotal.io/security/cve-2018-1199"&gt;CVE-2018-1199&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This release includes an important fix for security vulnerability &lt;a href="https://pivotal.io/security/cve-2018-1196"&gt;CVE-2018-1196&lt;/a&gt;, which can affect anyone using Spring Boot&amp;rsquo;s systemd and init.d service support. It also provides the latest version of Spring Security which fixed &lt;a href="https://pivotal.io/security/cve-2018-1199"&gt;CVE-2018-1199&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;In addition the security fix, Spring Boot 1.5.10 includes &lt;a href="https://github.com/spring-projects/spring-boot/milestone/96?closed=1"&gt;over 55 fixes, improvements and dependency updates&lt;/a&gt;. Thanks to all that have contributed with issue reports and pull requests.&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://projects.spring.io/spring-boot/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-boot/docs/1.5.10.RELEASE/reference/htmlsingle"&gt;Documentation&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-boot"&gt;Stack Overflow&lt;/a&gt; | &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;&lt;/p&gt;</content>
   </entry>
@@ -1330,31 +1528,5 @@ class EmployeeController {
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>This Week in Spring - January 9th, 2017</title>
-    <link rel="alternate" href="https://spring.io/blog/2018/01/09/this-week-in-spring-january-9th-2017" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2018-01-09:3136</id>
-    <updated>2018-01-09T12:26:00Z</updated>
-    <content type="html">&lt;p&gt;Hi Spring fans! Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! This week I&amp;rsquo;m off to Germany where I&amp;rsquo;ll be speaking at the &lt;a href="http://www.jug-muenster.de/cloud-native-java-mit-spring-boot-10-1-2018-1489/"&gt;Java User Group in Münster on Wednesday night&lt;/a&gt;. Then, it&amp;rsquo;s off to Solingen for a &lt;a href="https://www.codecentric.de/2017/11/30/cloud-native-java-day-spring-rockstar-josh-long/"&gt;Cloud Native day on the 12th (this Friday) where I&amp;rsquo;ll be presenting all afternoon&lt;/a&gt; - register now! And, if you&amp;rsquo;re closer to the Pacific ocean than the Atlantic ocean, join me next Monday in Hawaii and we&amp;rsquo;ll talk about &lt;a href="http://events.eventzilla.net/e/lavaone-2018-2138921167"&gt;all things Spring at the very promising LavaOne conference&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;As usual, we&amp;rsquo;ve got a lot to cover so let&amp;rsquo;s get to it. &lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;There&amp;rsquo;s &lt;a href="https://github.com/spring-cloud/spring-cloud-cloudfoundry/tree/master/spring-cloud-cloudfoundry-commons"&gt;new support for auto-configuring the Reactor-based Cloud Foundry Java client in Spring Cloud&lt;/a&gt;. This is exciting for me because that Java client is &lt;em&gt;such&lt;/em&gt; a powerful tool that takes &lt;em&gt;so&lt;/em&gt; long to configure.&lt;/li&gt;
-  &lt;li&gt;There&amp;rsquo;s a new guide on &lt;a href="https://spring.io/guides/gs/contract-rest/"&gt;using Spring Cloud contract&lt;/a&gt; by community legend Erdem Günay.&lt;/li&gt;
-  &lt;li&gt;The Baeldung blog have a nice look at &lt;a href="http://www.baeldung.com/hibernate-5-spring"&gt;bootstrapping Hibernate 5 with Spring&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;The first raft of &lt;a href="http://springdays.io/?_lrsc=d6800d25-1146-4c09-95f8-28afef9f5d71"&gt;Spring Days events&lt;/a&gt; have been announced! Do &lt;em&gt;not&lt;/em&gt; miss these events in a city near you! I&amp;rsquo;ll be there along with other Pivotal peeps. Join us.&lt;/li&gt;
-  &lt;li&gt;The &lt;a href="https://apigee.com/about/blog/api-technology/apigee-edge-service-broker-300-pivotal-cf-here"&gt;Apigee Edge Service Broker 3.0 for Pivotal Cloud Foundry&lt;/a&gt; has just arrived.&lt;/li&gt;
-  &lt;li&gt;Check out this Spanish-language &lt;a href="http://qajungle.com/consumer-driven-contract-testing-con-spring-cloud-contract/"&gt;post on using Spring Cloud Contract&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;The &lt;a href="https://github.com/resilience4j/resilience4j"&gt;Resilience4J project is an interesting looking library&lt;/a&gt; containing implementations of things like circuit breakers and retry handlers and it has nice looking Spring Boot integrations. I hope Spring Cloud one day integrates this. In the meantime, check it out.&lt;/li&gt;
-  &lt;li&gt;Epic Spring Data for Apache Geode lead &lt;a href="https://softwareengineeringdaily.com/2018/01/04/spring-data-with-john-blum/"&gt;John Blum gave an interview to the epic Software Engineering Daily podcast&lt;/a&gt;: give it a listen.&lt;/li&gt;
-  &lt;li&gt;Dan Vega has an interesting video &lt;a href="https://www.youtube.com/watch?v=aPrlbE8E_bU&amp;app=desktop"&gt;on installing the Spring Boot CLI in a Windows environment&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;I &lt;a href="https://www.youtube.com/watch?v=9Ef2Y4Dtp1I"&gt;gave an interview to Faros Belgium&lt;/a&gt; during last month&amp;rsquo;s epic SpringOne Platform 2017 event.&lt;/li&gt;
-  &lt;li&gt;The &lt;a href="https://cloudfoundry.org/meltdown-spectre-attacks/"&gt;Cloud Foundry Foundation security team has detailed the response for Cloud Foundry users for the Spectrum and Meltdown flaws&lt;/a&gt; recently discovered in CPUs. These kinds of vulnerabilities are &lt;em&gt;exactly&lt;/em&gt; where a centralized platform like Cloud Foundry can make all the difference in the world - mitigate the issue centrally and see it deployed automatically.&lt;/li&gt;
-  &lt;li&gt;Tristan Perry put together &lt;a href="https://www.tristanperry.com/java8/spring/2017/12/23/java8-spring-cloud-microservice-demo.html"&gt;a nice Spring Cloud microservices tutorial&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;</content>
   </entry>
 </feed>

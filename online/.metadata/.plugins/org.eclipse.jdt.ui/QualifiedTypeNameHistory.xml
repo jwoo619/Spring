@@ -3,7 +3,9 @@
 <fullyQualifiedTypeName name="org.hibernate.ejb.criteria.FromImplementor"/>
 <fullyQualifiedTypeName name="com.javalec.ex.Calculation"/>
 <fullyQualifiedTypeName name="com.javalec.ex.Calculator"/>
+<fullyQualifiedTypeName name="com.javalec.ex.MyCalculator"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="org.springframework.context.support.AbstractApplicationContext"/>
 <fullyQualifiedTypeName name="org.springframework.context.support.GenericXmlApplicationContext"/>
-<fullyQualifiedTypeName name="com.javalec.ex.MyCalculator"/>
+<fullyQualifiedTypeName name="com.javalec.ex.MyInfo"/>
 </qualifiedTypeNameHistroy>
