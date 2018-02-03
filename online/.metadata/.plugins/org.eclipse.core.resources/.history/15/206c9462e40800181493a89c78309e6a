@@ -1,0 +1,23 @@
+package com.javalec.ex;
+
+public class StudentInfo {
+	
+	private Student student;
+	
+	public StudentInfo(Student student){
+		this.student = student;
+	}
+
+	public void getStundetInfo() {
+		if(student != null){
+			
+		}
+	}
+
+	public void setStundet(Student stundet) {
+		this.student = stundet;
+	}
+	
+	
+
+}
