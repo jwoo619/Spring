@@ -5,7 +5,10 @@
 <fullyQualifiedTypeName name="com.javalec.ex.Calculator"/>
 <fullyQualifiedTypeName name="com.javalec.ex.MyCalculator"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.javalec.ex.MyInfo"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="com.javalec.ex.StudentInfo"/>
+<fullyQualifiedTypeName name="com.javalec.ex.Student"/>
 <fullyQualifiedTypeName name="org.springframework.context.support.AbstractApplicationContext"/>
 <fullyQualifiedTypeName name="org.springframework.context.support.GenericXmlApplicationContext"/>
-<fullyQualifiedTypeName name="com.javalec.ex.MyInfo"/>
 </qualifiedTypeNameHistroy>
