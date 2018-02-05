@@ -1,0 +1,17 @@
+package com.javalec.ex;
+
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		
+		String configLocation1 = "classpath:apllcationCTX.xml";
+		String configLocation2 = "classpath:apllcationCTX1.xml";
+		AbstractApplicationContext ctx = new GenericXmlApplicationContext(configLocation1,configLocation2);
+		Student student1 = ctx.getBean("student1",Student.class)
+		
+	}
+
+}

@@ -2,4 +2,6 @@
 //com.springsource.config.ui.prefs.activePageIndex\:/dependecy_injection_3/src/main/resources/applicationCTX.xml=<?xml version\="1.0" encoding\="UTF-8"?>\n<activePage index\="0"/>
 //com.springsource.config.ui.prefs.activePageIndex\:/dependecy_injection_3_2/src/main/resources/applicationCTX.xml=<?xml version\="1.0" encoding\="UTF-8"?>\n<activePage index\="0"/>
 //com.springsource.config.ui.prefs.activePageIndex\:/dependency\ injection/src/main/resources/applicationCTX.xml=<?xml version\="1.0" encoding\="UTF-8"?>\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/dependency_injection_4/src/main/resources/applicationCTX.xml=<?xml version\="1.0" encoding\="UTF-8"?>\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/dependency_injection_4/src/main/resources/applicationCTX1.xml=<?xml version\="1.0" encoding\="UTF-8"?>\n<activePage index\="0"/>
 eclipse.preferences.version=1

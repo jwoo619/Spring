@@ -1,0 +1,10 @@
+package com.javalec.ex;
+
+public class Family {
+	
+	String papaName;
+	String mamName;
+	String sisterName;
+	String brotherName;
+
+}
