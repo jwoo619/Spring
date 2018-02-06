@@ -4,6 +4,7 @@
 <aop-project name="dependecy_injection_3_2"/>
 <aop-project name="dependecy_injection_2"/>
 <aop-project name="dependecy_injection_3"/>
+<aop-project name="Life_Cycle"/>
 <aop-project name="My_First_Project"/>
 <aop-project name="dependency injection"/>
 </aop-reference-model>
