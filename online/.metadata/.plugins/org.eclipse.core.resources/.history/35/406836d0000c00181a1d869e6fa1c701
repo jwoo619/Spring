@@ -1,0 +1,18 @@
+package com.javalec.ex;
+
+import org.hibernate.cfg.Environment;
+import org.springframework.beans.factory.DisposableBean;
+import org.springframework.beans.factory.InitializingBean;
+import org.springframework.context.EnvironmentAware;
+
+public class AdminConnection implements EnvironmentAware , InitializingBean , DisposableBean {
+	
+	private Environment env;
+	private String adminId;
+	private String adminPw;
+	
+	@Override
+	public void setEnvironment(Environment env){
+		
+	}
+}
