@@ -5,7 +5,127 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2018-02-06T13:41:00Z</updated>
+  <updated>2018-02-07T19:24:11Z</updated>
+  <entry>
+    <title>Spring Cloud for Google Cloud Platform 1.0 Milestone 2 Available</title>
+    <link rel="alternate" href="https://spring.io/blog/2018/02/07/spring-cloud-for-google-cloud-platform-1-0-milestone-2-available" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Artem Bilan</name>
+    </author>
+    <id>tag:spring.io,2018-02-07:3162</id>
+    <updated>2018-02-07T19:24:11Z</updated>
+    <content type="html">&lt;div class="paragraph"&gt;
+&lt;p&gt;Dear Spring Community!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;It&amp;#8217;s my pleasure to announce today a new project in the &lt;a href="https://projects.spring.io/spring-cloud/"&gt;Spring Cloud&lt;/a&gt; family.
+It’s called &lt;code&gt;Spring Cloud GCP&lt;/code&gt; and its goal is to bring into your applications well-known Spring patterns and Spring Boot conventions for consuming &lt;a href="https://cloud.google.com"&gt;Google Cloud Platform&lt;/a&gt; services.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The project currently is in version &lt;code&gt;1.0.0.M2&lt;/code&gt; and is available from the &lt;a href="https://repo.spring.io/milestone/org/springframework/cloud"&gt;Spring Milestone Repository&lt;/a&gt;:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&amp;lt;dependencyManagement&amp;gt;
+   &amp;lt;dependencies&amp;gt;
+       &amp;lt;dependency&amp;gt;
+           &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt;
+           &amp;lt;artifactId&amp;gt;spring-cloud-gcp-dependencies&amp;lt;/artifactId&amp;gt;
+           &amp;lt;version&amp;gt;1.0.0.M2&amp;lt;/version&amp;gt;
+           &amp;lt;type&amp;gt;pom&amp;lt;/type&amp;gt;
+           &amp;lt;scope&amp;gt;import&amp;lt;/scope&amp;gt;
+       &amp;lt;/dependency&amp;gt;
+   &amp;lt;/dependencies&amp;gt;
+&amp;lt;/dependencyManagement&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;This project has been started as an experiment of collaboration between Google and Spring teams.
+So far we got a good experience and our inter-team knowledge sharing has brought for us this project with several stable modules and active contribution from the Google team.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The project provides an integration and access object to Google Cloud Platform services via these modules:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="spring-cloud-gcp-core"&gt;&lt;a class="anchor" href="#spring-cloud-gcp-core"&gt;&lt;/a&gt;spring-cloud-gcp-core&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The first class citizen abstraction like &lt;code&gt;GcpProjectIdProvider&lt;/code&gt; and &lt;code&gt;CredentialsProvider&lt;/code&gt; and their support classes.
+Provides properties and configures access to the &lt;a href="https://cloud.google.com/resource-manager/docs/creating-managing-projects"&gt;Project ID&lt;/a&gt; and &lt;a href="https://cloud.google.com/docs/authentication"&gt;Cloud Authentication&lt;/a&gt;.
+This is a transitive dependency for all other modules.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="spring-cloud-gcp-autoconfigure-and-spring-cloud-gcp-starters"&gt;&lt;a class="anchor" href="#spring-cloud-gcp-autoconfigure-and-spring-cloud-gcp-starters"&gt;&lt;/a&gt;spring-cloud-gcp-autoconfigure and spring-cloud-gcp-starters&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The Spring Boot auto-configurations and starters for components provided by this project, or just wrappers and helpers to existing auto-configuration such as &lt;code&gt;DataSourceAutoConfiguration&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="spring-cloud-gcp-pubsub"&gt;&lt;a class="anchor" href="#spring-cloud-gcp-pubsub"&gt;&lt;/a&gt;spring-cloud-gcp-pubsub&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The well-known &lt;code&gt;Template&lt;/code&gt; and &lt;code&gt;Factory&lt;/code&gt; Spring patterns implementations for &lt;a href="https://cloud.google.com/pubsub"&gt;Google Cloud Pub/Sub&lt;/a&gt; service.
+Also this module includes &lt;a href="https://projects.spring.io/spring-integration"&gt;Spring Integration&lt;/a&gt; Channel Adapters implementations around the &lt;code&gt;PubSubTemplate&lt;/code&gt;, &lt;code&gt;PublisherFactory&lt;/code&gt; and &lt;code&gt;SubscriberFactory&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="spring-cloud-gcp-storage"&gt;&lt;a class="anchor" href="#spring-cloud-gcp-storage"&gt;&lt;/a&gt;spring-cloud-gcp-storage&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The &lt;code&gt;org.springframework.core.io.ProtocolResolver&lt;/code&gt; implementation for the &lt;a href="https://cloud.google.com/storage"&gt;Google Cloud Storage&lt;/a&gt; resources resolution.
+Plus &lt;a href="https://projects.spring.io/spring-integration"&gt;Spring Integration&lt;/a&gt; Channel Adapters for reading and writing to/from &lt;code&gt;Blob&lt;/code&gt; and &lt;code&gt;Bucket&lt;/code&gt; resources.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="spring-cloud-gcp-logging"&gt;&lt;a class="anchor" href="#spring-cloud-gcp-logging"&gt;&lt;/a&gt;spring-cloud-gcp-logging&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;This module provides support for associating a web request trace ID with the corresponding log entries.
+This allows grouping of log messages by request.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="spring-cloud-gcp-trace"&gt;&lt;a class="anchor" href="#spring-cloud-gcp-trace"&gt;&lt;/a&gt;spring-cloud-gcp-trace&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The &lt;a href="https://cloud.spring.io/spring-cloud-sleuth"&gt;Spring Cloud Sleuth&lt;/a&gt; components implementation for the &lt;a href="https://cloud.google.com/trace"&gt;Google Cloud Stackdriver Trace&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="spring-cloud-gcp-pubsub-stream-binder"&gt;&lt;a class="anchor" href="#spring-cloud-gcp-pubsub-stream-binder"&gt;&lt;/a&gt;spring-cloud-gcp-pubsub-stream-binder&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The &lt;a href="https://cloud.spring.io/spring-cloud-stream"&gt;Spring Cloud Stream&lt;/a&gt; &lt;code&gt;Binder&lt;/code&gt; implementation for the &lt;a href="https://cloud.google.com/pubsub"&gt;Google Cloud Pub/Sub&lt;/a&gt; service.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;See more information about these and other project features in the &lt;a href="https://docs.spring.io/spring-cloud-gcp/docs/1.0.0.M2/reference/htmlsingle"&gt;Reference Manual&lt;/a&gt;.
+Also pay attention to the comprehensive set of &lt;a href="https://github.com/spring-cloud/spring-cloud-gcp/tree/master/spring-cloud-gcp-samples"&gt;Samples&lt;/a&gt; provided in the project.
+In addition we have a &lt;a href="https://spring.io/guides/gs/spring-cloud-gcp"&gt;Messaging with Google Cloud Pub/Sub&lt;/a&gt; Getting Started Guide for you.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;And finally don&amp;#8217;t miss &lt;a href="https://cloudplatform.googleblog.com/2018/02/announcing-Spring-Cloud-GCP-integrating-your-favorite-Java-framework-with-Google-Cloud.html"&gt;Google Announcement&lt;/a&gt; about this project!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;More Google Cloud Platform services support and Spring components implementations are coming!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Any feedback, feature ideas, critics, bug reports and questions are welcome via appropriate communication channels.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;&lt;a href="https://cloud.spring.io/spring-cloud-gcp"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-cloud/spring-cloud-gcp/issues"&gt;issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-cloud-gcp/docs/1.0.0.M2/reference/htmlsingle"&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Spring Data Lovelace M1 released.</title>
     <link rel="alternate" href="https://spring.io/blog/2018/02/06/spring-data-lovelace-m1-released" />
@@ -960,43 +1080,5 @@ java -jar spring-cloud-dataflow-shell-1.3.0.RC1.jar --dataflow.mode=skipper&lt;/
 &lt;/ul&gt;
 &lt;p&gt;The &lt;a href="https://docs.spring.io/spring-cloud-skipper/docs/1.0.0.RC1/reference/htmlsingle/#getting-started-installing-skipper"&gt;getting started section&lt;/a&gt; in the reference guide is the best place to start kicking the tires.&lt;/p&gt;
 &lt;p&gt;Please reach out on &lt;a href="https://github.com/spring-cloud/spring-cloud-skipper/issues"&gt;Github issues&lt;/a&gt;, &lt;a href="https://stackoverflow.com/questions/tagged/spring-cloud-skipper"&gt;Stack Overflow&lt;/a&gt;, and the &lt;a href="https://gitter.im/spring-cloud/spring-cloud-skipper"&gt;Gitter channel&lt;/a&gt; with questions, feedback or contributions.&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>This Week in Spring - January 16th, 2018</title>
-    <link rel="alternate" href="https://spring.io/blog/2018/01/17/this-week-in-spring-january-16th-2018" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2018-01-17:3140</id>
-    <updated>2018-01-17T01:03:00Z</updated>
-    <content type="html">&lt;p&gt;Aloha! This week I&amp;rsquo;m in &lt;a href="https://twitter.com/LavaOneConf"&gt;sunny Honolulu for the first annual LavaOne conference&lt;/a&gt;. If you&amp;rsquo;re not here, you should be! The show is amazing, enjoys 50% female to male audience attendance, the speakers are world-class (well, except yours truly, but don&amp;rsquo;t tell them that..) and the location is pretty hard to beat! &lt;/p&gt;
-&lt;img src="https://pbs.twimg.com/media/DTqYoe2VQAEdlbP.jpg:large" /&gt;
-&lt;p&gt;That said, nothing gives me more pleasure than saddling up to a table with a laptop, some green tea, sunglasses and sunscreen lotion and checking in on the community. This week&amp;rsquo;s been a heckuva week indeed! Lot&amp;rsquo;s of great stuff so let&amp;rsquo;s get to it! &lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Ryan Baxter just announced Spring Cloud Edgware SR1 which &lt;a href="https://spring.io/blog/2018/01/16/spring-cloud-edgware-sr1-released"&gt;contains updates for several modules&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Project Reactor team ninja &lt;a href="https://spring.io/blog/2018/01/16/sneak-peek-at-reactor-core-3-2-with-milestone-1"&gt;Simon Baslé offers a look at Reactor 3.2.M1&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2018/01/16/spring-session-2-0-0-released"&gt;Vedran Pavić just announced Spring Session 2.0.0&lt;/a&gt;. Check it out - there are a ton of improvements.&lt;/li&gt;
-  &lt;li&gt;Spring ninja Greg Turnquist has put together a nice post introducing the support &lt;a href="https://spring.io/blog/2018/01/12/building-richer-hypermedia-with-spring-hateoas"&gt;in Spring HATEOAS for the Affordances API&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;There&amp;rsquo;s now support for &lt;a href="https://github.com/spring-projects/spring-data-redis/pull/301"&gt;query-by-example in Spring Data Redis&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;A friendly reminder that, going forward, &lt;a href="http://cloud.spring.io/spring-cloud-static/Edgware.RELEASE/single/spring-cloud.html#_sleuth_with_zipkin_via_rabbitmq_or_kafka"&gt;the preferred way to integrate with the OpenZipkin project is to publish messages over RabbitMQ or Apache Kafka using the &lt;code&gt;spring-cloud-starter-zipkin&lt;/code&gt; client&lt;/a&gt;. This is different than using either Spring Cloud Sleuth Stream (which is deprecated) or using Spring Cloud Zipkin with HTTP, as we have demonstrated before. This stuff changes frequently!&lt;/li&gt;
-  &lt;li&gt;I loved Java community legend &lt;a href="https://antoniogoncalves.org/2018/01/16/java-ee-vs-spring-testing/amp/?__twitter_impression=true"&gt;Antonio Goncalves&amp;rsquo; blog post detailing his impressions of testing in Spring&lt;/a&gt; (and contrasting that with testing in Arquillian, for Java EE applications)&lt;/li&gt;
-  &lt;li&gt;Spring Framework test &lt;a href="https://github.com/sbrannen/spring-test-junit5"&gt;lead Sam Brannen has updated his sample app demonstrating Spring and JUnit 5&lt;/a&gt;. Do check it out!&lt;/li&gt;
-  &lt;li&gt;I loved this &lt;em&gt;The New Stack&lt;/em&gt; interview with Spring creator and Atomist CEO Rod Johnson. In it he talks &lt;a href="https://thenewstack.io/spring-rod-johnson-enterprise-java/"&gt;about Spring, enterprise Java, SpringOne Platform and TypeScript&lt;/a&gt;, among many other things. Check it out!&lt;/li&gt;
-  &lt;li&gt;This doesn&amp;rsquo;t have to do with Spring, per se, but it&amp;rsquo;s very interesting: &lt;a href="https://dzone.com/refcardz/apache-kafka?oid=twitter"&gt;a DZone refcard on Apache Kakfa&lt;/a&gt;). Apache Kafka works well with Spring (via Spring Cloud Stream Kafka Binder, Spring Cloud Stream Kafka Streams Stream binder, Spring for Apache Kafka, and the Spring Integration extensions for Apache Kafka).&lt;/li&gt;
-  &lt;li&gt;InfoQ has a nice roundup &lt;a href="https://www.infoq.com/news/2018/01/PCF2BringsContainersServerless"&gt;of Pivotal Cloud Foundry 2.0 which has been reimagined to be a container, application and serverless-hosting platform&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;This looks kind of interesting. Maybe something you could enable during development and testing.. &lt;a href="https://github.com/harshilsharma63/controller-logger"&gt;It&amp;rsquo;s a Spring AOP based interceptor that logs all interactions with, for example, Spring MVC&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;Tomasz Nurkiewicz has a nice post that looks &lt;a href="http://www.nurkiewicz.com/2018/01/spring-reactor-and-elasticsearch-from.html"&gt;at using Spring, Project Reactor, and ElasticSearch&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring community legend Aboullaite Mohammed has &lt;a href="https://aboullaite.me/spring-boot-monitoring-prometheus-grafana/"&gt;a really nice post on monitoring Spring Boot applications with Promtheus and Grafana&lt;/a&gt;. Yay observability!&lt;/li&gt;
-  &lt;li&gt;This blog looks at the new Meltdown and Spectre security vulnerabilities and highlights that, in order to be most effectively protected against something like this, you need completely automated infrastructure of the &lt;a href="https://diginomica.com/2018/01/12/hardware-security-flaws-underscore-need-infrastructure-automation-meltdown-spectre-last-wake-call/"&gt;sort that platforms like Cloud Foundry, which sits on top of BOSH, can provide&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;The code for Spring Data lead Oliver Gierke&amp;rsquo;s talk &lt;em&gt;Refactoring to a System of Systems&lt;/em&gt; is &lt;a href="https://github.com/olivergierke/sos"&gt;available online&lt;/a&gt;. You should definitely watch the talk, too!&lt;/li&gt;
-  &lt;li&gt;Just a friendly reminder that the &lt;a href="https://twitter.com/juanantoniobm/status/951571465236811776?ref_src=twcamp%5Eshare%7Ctwsrc%5Eios%7Ctwgr%5Ecom.blork.Pinner.AddBookmarkExtension"&gt;performance of Spring Cloud Gateway&lt;br/&gt; in the upcoming Spring Cloud Finchley release is boss-sauce and you should definitely try it out&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Our very own Ben Hale is experimenting with a reactive SQL-based database access API. It&amp;rsquo;s super early days yet, and no idea where it could go, but it&amp;rsquo;s interesting and &lt;a href="https://github.com/nebhale/r2dbc"&gt;you might take a look&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;See this post on a Linux (Xenial HWE) vulnerability &lt;a href="https://cloudfoundry.org/usn-3522-2/"&gt;that affects your Cloud Foundry platform installations&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;I liked Johan Vos&amp;rsquo; post &lt;a href="https://medium.com/@johanvos_42743/in-an-increasingly-complex-world-java-takes-the-right-move-ea11c757e76e"&gt;on the state of Java&lt;/a&gt;. This has nothing to do, specifically, with Spring, but you&amp;rsquo;ll enjoy it if you enjoy Spring (and the JVM).&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;The New Stack&lt;/em&gt; have also published &lt;a href="https://thenewstack.io/netflix-built-spinnaker-high-velocity-continuous-delivery-platform/"&gt;an interesting post on how Netflix built their continuous delivery platform, Spinnaker&lt;/a&gt;. One thing that I love about it that I didn&amp;rsquo;t see mentioned here? It&amp;rsquo;s built using Spring Boot!&lt;/li&gt;
-  &lt;li&gt;Pivotal CTO Onsi Fakhouri was featured on &lt;a href="https://itunes.apple.com/us/podcast/software-engineering-daily/id1019576853?mt=2&amp;i=1000399137566"&gt;the Software Engineering Daily podcast&lt;/a&gt;. This is well worth a listen!&lt;/li&gt;
-  &lt;li&gt;Ranga Karanam put together a nice post detailing seven things people &lt;a href="https://dzone.com/articles/7-things-to-know-getting-started-with-spring-boot"&gt;should know when using Spring Boot&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content>
   </entry>
 </feed>

@@ -45,8 +45,8 @@ public class AdminConnection implements EnvironmentAware , InitializingBean , Di
 	@Override
 	public void afterPropertiesSet() throws Exception{
 		System.out.println("after()");
-		setAdminId(env.getProperty("admin.id"));
-		setAdminPw(env.getProperty("admin.pw"));
+		//setAdminId(env.getProperty("admin.id")); Main1
+		//setAdminPw(env.getProperty("admin.pw"));
 	}
 	
 	@Override
