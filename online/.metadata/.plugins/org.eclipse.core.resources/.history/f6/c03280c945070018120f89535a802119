@@ -1,9 +1,0 @@
-package com.javalec.ex;
-
-public class Calculator {
-	
-	public void addition(int f , int s){
-		
-	}
-
-}
