@@ -1,0 +1,15 @@
+package com.javalec.ex;
+
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Pointcut;
+
+@Aspect
+public class LogAop {
+	
+	@Pointcut("within(com.javalec.ex.*)")
+	private void pointcutMethod(){
+		
+	}
+	
+
+}
