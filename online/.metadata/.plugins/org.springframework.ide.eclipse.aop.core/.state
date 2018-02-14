@@ -23,6 +23,7 @@
 </aop-project>
 <aop-project name="MVC"/>
 <aop-project name="dependecy_injection_3"/>
+<aop-project name="Form"/>
 <aop-project name="dependency injection"/>
 <aop-project name="Env"/>
 <aop-project name="dependecy_injection_3_2"/>
