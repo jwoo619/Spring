@@ -22,6 +22,7 @@
 </aspect-definition>
 </aop-project>
 <aop-project name="MVC"/>
+<aop-project name="RequestMapping"/>
 <aop-project name="dependecy_injection_3"/>
 <aop-project name="Form"/>
 <aop-project name="dependency injection"/>
