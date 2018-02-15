@@ -32,6 +32,7 @@
 <aop-project name="Life_Cycle"/>
 <aop-project name="controller"/>
 <aop-project name="My_First_Project"/>
+<aop-project name="FormData"/>
 <aop-project name="AOP2">
 <aspect-definition advice-class-name="com.javalec.ex.LogAop" advice-method-name="beforadvice" advice-type="BEFORE" aspect-end-line-number="10" aspect-name="logAop" aspect-start-line-number="10" factory-id="org.springframework.ide.eclipse.aop.core.annotationAspectDefinitionElementFactory" file="/AOP2/src/main/resources/applicationCTX.xml" pointcut-expression="within(com.javalec.ex.*)" proxy-target-class="false">
 <aop-reference advice-type="BEFORE" bean="1:BeansModel|2:AOP2|3:src/main/resources/applicationCTX.xml|7:beans:6|8:student:12" bean-file="/AOP2/src/main/resources/applicationCTX.xml" bean-start-line="12" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/AOP2/src/main/resources/applicationCTX.xml" source="=AOP2/src\/main\/java&lt;com.javalec.ex{LogAop.java[LogAop~beforadvice" source-start-line="35" target="=AOP2/src\/main\/java&lt;com.javalec.ex{Student.java[Student~getClassNum" target-start-line="27"/>

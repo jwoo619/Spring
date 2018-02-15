@@ -1,0 +1,18 @@
+package com.javalec.ex;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class studentController {
+
+	@RequestMapping("/studentForm")
+	public String studentForm(){
+		return "createPage";
+	}
+	
+	@RequestMapping("/student/create")
+	public String studentCreate(){
+		
+	}
+}

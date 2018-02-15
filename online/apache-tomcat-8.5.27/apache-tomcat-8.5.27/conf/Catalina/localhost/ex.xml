@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Context docBase="/Users/Jinwoo/Desktop/Spring/online/apache-tomcat-8.5.27/apache-tomcat-8.5.27/wtpwebapps/RequestMapping" path="/ex" reloadable="true" source="org.eclipse.jst.jee.server:RequestMapping"/>
+<Context docBase="/Users/Jinwoo/Desktop/Spring/online/apache-tomcat-8.5.27/apache-tomcat-8.5.27/wtpwebapps/FormData" path="/ex" reloadable="true" source="org.eclipse.jst.jee.server:FormData"/>

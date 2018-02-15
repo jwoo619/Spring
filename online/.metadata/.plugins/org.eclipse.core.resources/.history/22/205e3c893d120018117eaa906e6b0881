@@ -1,0 +1,12 @@
+package com.javalec.ex;
+
+import org.springframework.validation.Validator;
+
+public class StudentValidator implements Validator {
+	
+	@Override
+	public boolean supports(Class<?> arg0){
+		return Student.class.isAssignableFrom(arg0);
+	}
+
+}
