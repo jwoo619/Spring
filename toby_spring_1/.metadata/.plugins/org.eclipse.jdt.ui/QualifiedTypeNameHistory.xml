@@ -7,11 +7,12 @@
 <fullyQualifiedTypeName name="springbook.user.dao.UserDao.SimpleConnectionMaker"/>
 <fullyQualifiedTypeName name="java.sql.DriverManager"/>
 <fullyQualifiedTypeName name="springbook.user.dao.UserDao.ConnectionMaker"/>
-<fullyQualifiedTypeName name="springbook.user.dao.UserDao"/>
 <fullyQualifiedTypeName name="springbook.user.dao.UserDao.DConnectionMaker"/>
 <fullyQualifiedTypeName name="java.sql.Connection"/>
 <fullyQualifiedTypeName name="java.lang.ClassNotFoundException"/>
 <fullyQualifiedTypeName name="java.sql.SQLException"/>
+<fullyQualifiedTypeName name="springbook.user.dao.DaoFactory"/>
+<fullyQualifiedTypeName name="springbook.user.dao.UserDao"/>
 <fullyQualifiedTypeName name="springbook.user.dao.ConnectionMaker"/>
 <fullyQualifiedTypeName name="springbook.user.dao.DConnectionMaker"/>
 </qualifiedTypeNameHistroy>
