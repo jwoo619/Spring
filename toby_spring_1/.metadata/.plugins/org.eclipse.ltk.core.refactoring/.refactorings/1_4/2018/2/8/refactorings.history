@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;DaoFactory.java&apos; to &apos;1_5/src/main/java/springbook.user.dao&apos;&#x0A;- Original project: &apos;1_4&apos;&#x0A;- Destination element: &apos;1_5/src/main/java/springbook.user.dao&apos;&#x0A;- Original element: &apos;springbook.user.dao.DaoFactory.java&apos;" description="Copy compilation unit" destination="=1_5/src\/main\/java&lt;springbook.user.dao" element1="/src\/main\/java&lt;springbook.user.dao{DaoFactory.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1519303334932" units="1" version="1.0"/>
+</session>

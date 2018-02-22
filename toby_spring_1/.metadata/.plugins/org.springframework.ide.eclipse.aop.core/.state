@@ -2,4 +2,5 @@
 <aop-reference-model>
 <aop-project name="1_3_3"/>
 <aop-project name="1_4"/>
+<aop-project name="1_5"/>
 </aop-reference-model>
