@@ -1,0 +1,30 @@
+package springbook.user.dao;
+
+import springbook.user.dao.UserDao.ConnectionMaker;
+import springbook.user.domian.User;
+
+public class UserDaoTest {
+
+	public static void main(String[] args) {
+		
+		ConnectionMaker connectionMaker = new UserDao.DConnectionMaker();
+		UserDao dao = new UserDao(); 
+		
+		User user = new User();
+		user.setId("tello");
+		user.setName("이진우");
+		user.setPassword("q1w2e3r4");
+		
+		dao.add(user);
+		
+		System.out.println(user.getId() + " 등록 성공");
+		
+		User user2 = dao.get(user.getId());
+		System.out.println(user2.getName());
+		System.out.println(user2.getPassword());
+		
+		System.out.println(user2.getId() + " 조회 성공");
+
+	}
+
+}
