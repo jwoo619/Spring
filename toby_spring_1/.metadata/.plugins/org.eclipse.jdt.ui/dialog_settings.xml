@@ -30,6 +30,8 @@
 		<item value="2" key="pageIndex"/>
 	</section>
 	<section name="completion_proposal_size">
+		<item value="165" key="contextSelector.size.y"/>
+		<item value="315" key="contextSelector.size.x"/>
 	</section>
 	<section name="DialogBounds_GetterSetterTreeSelectionDialog">
 		<item value="519" key="DIALOG_WIDTH"/>
