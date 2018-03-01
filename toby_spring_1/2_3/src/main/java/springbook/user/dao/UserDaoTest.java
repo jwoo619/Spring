@@ -8,12 +8,17 @@ import java.sql.SQLException;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.JUnitCore;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.GenericXmlApplicationContext;
 import org.springframework.dao.EmptyResultDataAccessException;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import springbook.user.domian.User;
+
 
 public class UserDaoTest {
 	private UserDao dao;
@@ -24,12 +29,12 @@ public class UserDaoTest {
 	@Before
 	public void setUp(){
 		//ApplicationContext context = new AnnotationConfigApplicationContext(DaoFactory.class);
-		ApplicationContext context = new GenericXmlApplicationContext("applicationContext.xml");
-		this.dao = context.getBean("userDao",UserDao.class);
-		
-		this.user1 = new User("tello","이진우","password1");
-		this.user2 = new User("admin","관리자","password2");
-		this.user3 = new User("guest","손님","password3");
+				ApplicationContext context = new GenericXmlApplicationContext("applicationContext.xml");
+				this.dao = context.getBean("userDao",UserDao.class);
+				
+				this.user1 = new User("tello","이진우","password1");
+				this.user2 = new User("admin","관리자","password2");
+				this.user3 = new User("guest","손님","password3");
 	}
 	
 	@Test
