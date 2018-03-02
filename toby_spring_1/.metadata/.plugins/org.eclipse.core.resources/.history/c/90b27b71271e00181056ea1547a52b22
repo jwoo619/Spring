@@ -1,0 +1,13 @@
+package springbook.learningtest.junit;
+
+import org.junit.Test;
+
+public class JUnitTest {
+	static JUnitTest testObject;
+	
+	@Test
+	public void test1(){
+		
+	}
+
+}

@@ -1,0 +1,6 @@
+package springbook.learningtest.junit;
+
+public class JUnitTest {
+	static JUnitTest testObject;
+
+}
