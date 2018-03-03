@@ -37,7 +37,7 @@ public class JUnitTest {
 	@Test public void test2() {
 		assertThat(testObjects, not(hasItem(this)));
 		testObjects.add(this);
-		
+
 		assertTrue(contextObject == null || contextObject == this.context);
 		contextObject = this.context;
 	}
@@ -46,7 +46,7 @@ public class JUnitTest {
 		assertThat(testObjects, not(hasItem(this)));
 		testObjects.add(this);
 		
-		assertThat(contextObject, either(is(nullValue())).or(is(this.contextObject)));
+		assertThat(contextObject, either(is(nullValue(ApplicationContext.class))).or(is(this.context)));
 		contextObject = this.context;
 	}
 }
