@@ -19,7 +19,6 @@
 <fullyQualifiedTypeName name="springbook.user.dao.CountingConnectionMaker"/>
 <fullyQualifiedTypeName name="org.junit.runner.JUnitCore"/>
 <fullyQualifiedTypeName name="javax.naming.spi.DirStateFactory.Result"/>
-<fullyQualifiedTypeName name="springbook.user.dao.UserDao"/>
 <fullyQualifiedTypeName name="org.springframework.dao.EmptyResultDataAccessException"/>
 <fullyQualifiedTypeName name="org.junit.Before"/>
 <fullyQualifiedTypeName name="org.springframework.test.annotation.DirtiesContext"/>
@@ -34,8 +33,11 @@
 <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 <fullyQualifiedTypeName name="org.springframework.test.context.ContextConfiguration"/>
 <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
+<fullyQualifiedTypeName name="java.sql.ResultSet"/>
+<fullyQualifiedTypeName name="springbook.user.dao.UserDao"/>
 <fullyQualifiedTypeName name="java.sql.Connection"/>
 <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
-<fullyQualifiedTypeName name="java.sql.ResultSet"/>
 <fullyQualifiedTypeName name="java.sql.SQLException"/>
+<fullyQualifiedTypeName name="springbook.user.dao.StatementStrategy"/>
+<fullyQualifiedTypeName name="springbook.user.dao.DeleteAllStatement"/>
 </qualifiedTypeNameHistroy>
