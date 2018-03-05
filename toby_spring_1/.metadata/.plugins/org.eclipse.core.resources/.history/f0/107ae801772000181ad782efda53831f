@@ -1,0 +1,10 @@
+package springbook.user.dao;
+
+import javax.sql.DataSource;
+
+public class JdbcContext {
+	private DataSource dataSource;
+	
+	
+
+}
