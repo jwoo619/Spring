@@ -5,7 +5,93 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2018-03-02T21:21:05Z</updated>
+  <updated>2018-03-05T14:53:00Z</updated>
+  <entry>
+    <title>This Week in Spring - Tuesday March 6th, 2018</title>
+    <link rel="alternate" href="https://spring.io/blog/2018/03/05/this-week-in-spring-tuesday-march-6th-2018" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2018-03-05:3202</id>
+    <updated>2018-03-05T14:53:00Z</updated>
+    <content type="html">&lt;p&gt;Hi Spring fans and welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! As I write this it&amp;rsquo;s early morning Tuesday in Sydney, Australia, where I&amp;rsquo;ve been visiting with some of Pivotal&amp;rsquo;s amazing customers, and I&amp;rsquo;m now preparing for my flight to Dubai, in six short hours, where I&amp;rsquo;ll visit some more of Pivotal&amp;rsquo;s amazing customers. Later this week I&amp;rsquo;ll be in Bangalore, India, for the &lt;a href="https://2018.agileindia.org/schedule/"&gt;amazing Agile India conference&lt;/a&gt;, and then - early next week on Tuesday - I&amp;rsquo;ll be in Boston, MA for the &lt;a href="https://springonetour.io/2018/boston"&gt;first SpringOne Tour event&lt;/a&gt;. If &lt;a href="http://twitter.com/starbuxman"&gt;you&amp;rsquo;re around don&amp;rsquo;t hesitate to say hi&lt;/a&gt;, as usual!&lt;/p&gt;
+&lt;p&gt;This week we&amp;rsquo;ve got a lot of great content celebrating the wonderful release of Spring Boot 2.0, so without further ado let&amp;rsquo;s get to it! &lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Huzzah! Spring Boot co-founder Phil Webb has &lt;a href="https://spring.io/blog/2018/03/01/spring-boot-2-0-goes-ga"&gt;just announced Spring Boot 2.0 GA&lt;/a&gt;! The new release is &lt;em&gt;packed&lt;/em&gt; with too many new features to count so what&amp;rsquo;re you doing? Get over there, read the post, say hi to &lt;a href="http://twitter.com/SpringBoot"&gt;the &lt;code&gt;@SpringBoot&lt;/code&gt;&lt;/a&gt; team on Twitter, and &lt;a href="http://start.spring.io"&gt;get started&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Join &lt;a href="https://content.pivotal.io/webinars/mar-13-introducing-spring-boot-2-0-webinar"&gt;the Spring Boot 2.0 launch webinar on March 13th&lt;/a&gt; to learn about it from the source!&lt;/li&gt;
+  &lt;li&gt;Spring Boot 2.0 is finally, at long last, here! I wrote about the journey to Spring Boot 2.0 in this Twitter thread, reviewing the history of Spring Boot from 1.0, on the 1st April 2014, to this momentous release. Click and join me &lt;a href="https://twitter.com/starbuxman/status/968960930150100992"&gt;for a #bootiful trip down memory lane&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Security lead Rob Winch previews the &lt;a href="https://spring.io/blog/2018/03/05/spring-security-saml-roadmap"&gt;Spring Security SAML Roadmap&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Sandra Gómez has put together a &lt;a href="https://blog-es.mimacom.com/documentacion-apis-spring-rest-docs/"&gt;very nice Spanish-language post on documenting APIs with Spring REST Docs&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Guillermo Tantachuco has put together a really nice overview of Project Riff, the &lt;a href="https://content.pivotal.io/blog/building-functions-with-riff?_lrsc=13c8ab0f-8cde-49d7-a5a3-7dc3d8a562d1"&gt;new function-as-a-service offering from Pivotal that runs on top of Kubernetes&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Spring Cloud co-founder Spencer Gibb has just &lt;a href="https://spring.io/blog/2018/03/02/spring-cloud-finchley-m8-is-available"&gt;announced Spring Cloud Finchley M8&lt;/a&gt;, the first release after the recent Spring Boot 2.0 release.&lt;/li&gt;
+  &lt;li&gt;Spring Security ninja Joe Grandja has just &lt;a href="https://spring.io/blog/2018/03/01/spring-security-oauth-boot-2-auto-config-2-0-0-released"&gt;announced the Spring Security OAuth Boot 2.0 auto-configuration has been released&lt;/a&gt;. It&amp;rsquo;s used to help users transition between the old Spring Security OAuth 2.x support and the next generation OAuth 2.0 Support in Spring Security 5. It provides users of Spring Security OAuth 2.x the same auto-configuration capabilities in a Spring Boot 2.0 based application that is currently available in Spring Boot 1.5.x. For more details please refer to the documentation.&lt;/li&gt;
+  &lt;li&gt;Spring Security lead Rob Winch chimes in on the state of &lt;a href="https://spring.io/blog/2018/03/01/spring-security-saml-and-this-week-s-saml-vulnerability"&gt;Spring Security SAML and this week&amp;rsquo;s SAML Vulnerability&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Session ninja Vedran Pavić has just announced Spring Session Apple SR1. The new release includes &lt;a href="https://spring.io/blog/2018/03/01/spring-session-apple-sr1-released"&gt;a BOM, and a number of other features&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Project Reactor ninja Simon Baslé &lt;a href="https://spring.io/blog/2018/02/28/reactor-bismuth-sr7-is-out"&gt;announced Reactor BISMUTH-SR7&lt;/a&gt;. The release was the final release needed for Spring Boot 2.0&lt;/li&gt;
+  &lt;li&gt;Spring Security lead Rob Winch has just &lt;a href="https://spring.io/blog/2018/02/28/spring-security-5-0-3-released"&gt;announced Spring Security 5.0.3&lt;/a&gt;. This release introduces a major performance improvement.&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2018/02/28/spring-data-kay-sr5-released"&gt;Spring Data Kay SR5 released&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;The &lt;a href="https://docs.gradle.org/4.6/release-notes.html"&gt;new Gradle 4.6 is out&lt;/a&gt; and it is packed with lots of cool features including initial JUnit 5 support, initial bill-of-material (BOM) dependencies and optional dependencies support, &lt;code&gt;--fail-fast&lt;/code&gt; for tests, and custom command line flags for tasks.&lt;/li&gt;
+  &lt;li&gt;I recently spoke at the first IBM Index conference where I performed an &lt;a href="https://www.youtube.com/watch?v=CjWADhZBiXE&amp;list=PLpryjkO3KF2yh5AFr3PDgOSIcWoZFGH1E&amp;index=39"&gt;updated &lt;em&gt;Cloud Native Java&lt;/em&gt;&lt;/a&gt;. This looks at building reactive microservices with Spring Cloud.&lt;/li&gt;
+  &lt;li&gt;Looking to get into open source? &lt;a href="https://github.com/OpenFeign/feign/issues/646"&gt;Open Feign is looking for maintainers&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;This is a monolithic &lt;a href="https://github.com/mzubal/spring-boot-monolith"&gt;Spring Boot application that&amp;rsquo;s been designed to be a modular monolith&lt;/a&gt;. It&amp;rsquo;s an interesting codebase - check it out!&lt;/li&gt;
+  &lt;li&gt;Marcos Barbero&amp;rsquo;s got a really detailed post on how to build an API gateway (using Spring Cloud Netflix Zuul) that &lt;a href="http://blog.marcosbarbero.com/ha-and-zone-affinity-spring-cloud-eureka/"&gt;will resolve and route requests (with Netflix Eureka) to other services in the same zone&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Spring and Cloud Foundry community legend Christophe has done a really nice job &lt;a href="https://medium.com/@christophef/scheduler-with-cloud-foundry-2f98d3daef35"&gt;introducing scheduled jobs in Cloud Foundry&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;This T-Mobile talk from SpringOne Platform 2017 features Brendan Aye discussing how T-Mobile built an application &lt;a href="https://www.infoq.com/presentations/t-mobile-cloud-foundry"&gt;receiving 12M daily calls with Cloud Foundry, covering the issues encountered and how they dealt with them.&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Sam McAffee looks at &lt;a href="https://medium.com/startup-patterns/why-enterprise-agile-teams-fail-4ae64f7852d6?_lrsc=c4967b80-f364-4798-912c-4bf359dfd56a"&gt;the reasons enterprises fail at agile&lt;/a&gt;. These problems are exactly the sorts of things that Pivotal helps address.&lt;/li&gt;
+  &lt;li&gt;Shamik Mitra has a nice post &lt;a href="https://dzone.com/articles/buiding-microservice-using-springboot-and-docker"&gt;on building microservices with Spring Boot and Spring Cloud&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Hot on the heels of the recent Spring Boot 2.0 release, the community project Spring Data Jest has been &lt;a href="https://twitter.com/vanr0y/status/969320129971609600?s=12"&gt;updated to Spring Boot 2.0&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Spring Cloud Contract lead Marcin Grzejszczak introduces the theory behind consumer driven &lt;a href="https://www.slideshare.net/MarcinGrzejszczak/stick-to-the-rules-consumer-driven-contracts-201507-confitura"&gt;contracts in the slides from one of his presentations&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/sdkman_/status/969106848526761984?s=12"&gt;Spring Boot 2 on sdkman&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;I really liked this post, &lt;a href="https://www.azul.com/109-new-features-in-jdk-10/"&gt;&lt;em&gt;109 New Features In JDK 10&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;If you&amp;rsquo;ll indulge me, I think this list of, em, &lt;a href="http://www.java67.com/2018/02/10-books-java-developers-should-read-in.html?m=1#ixzz58PVGvEGA"&gt;ten books every Java developer should read in 2018&lt;/a&gt; is, well, a must-read.&lt;/li&gt;
+  &lt;li&gt;Michael Simons has a nice &lt;a href="https://jaxenter.de/spring-boot-2-spring-5-68265"&gt;piece over on JAXenter on the new Spring Boot 2.0 release&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Check out our first guide on &lt;a href="https://twitter.com/springcentral/status/969312034738159617"&gt;building reactive microservices with Spring&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Shannon Coen introduces three major improvements to &lt;a href="https://www.cloudfoundry.org/blog/three-improvements-cloud-foundry-routing-security-resiliency-consistency/"&gt;routing in Cloud Foundry supporting security, resiliency and consistency&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/springcentral/status/969022493129240577"&gt;https://twitter.com/springcentral/status/969022493129240577&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Here are some interesting courses &lt;a href="https://dzone.com/articles/top-5-spring-microservices-courses-with-spring-boo"&gt;introducing Spring Boot and Spring Cloud&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;The Java Revisited blog has seven reasons &lt;a href="http://javarevisited.blogspot.sg/2018/01/7-reasons-for-using-spring-to-develop-RESTful-web-service.html"&gt;to use Spring to develop RESTful services in Java&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;The &lt;em&gt;Java Revisited&lt;/em&gt; blog also has a &lt;a href="http://javarevisited.blogspot.sg/2018/02/top-20-spring-rest-interview-questions-answers-java.html#axzz58PUD5MEC"&gt;list of twenty interview questions for Java programmers&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;The &lt;em&gt;Java Revisited&lt;/em&gt; blog &lt;em&gt;also&lt;/em&gt; looked &lt;a href="http://javarevisited.blogspot.sg/2018/02/what-is-securitycontext-and-SecurityContextHolder-Spring-security.html#axzz58PUD5MEC"&gt;at Spring Security&amp;rsquo;s &lt;code&gt;SecurityContext&lt;/code&gt; and &lt;code&gt;SecurityContextHolder&lt;/code&gt;.&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;This looks promising: Spring Data ninja Christoph Strobl previews &lt;a href="https://twitter.com/SpringData/status/968789942141939713"&gt;reactive &lt;code&gt;ClientSession&lt;/code&gt; support for MongoDB&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Security SAML Roadmap</title>
+    <link rel="alternate" href="https://spring.io/blog/2018/03/05/spring-security-saml-roadmap" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Rob Winch</name>
+    </author>
+    <id>tag:spring.io,2018-03-02:3198</id>
+    <updated>2018-03-05T13:54:00Z</updated>
+    <content type="html">&lt;div class="paragraph"&gt;
+&lt;p&gt;The Spring Security SAML project has been an integral part of the Spring ecosystem since its inception nearly 9 years ago. This critically important project was born through the incredible effort and contributions of &lt;a href="https://github.com/vschafer"&gt;Vladimír Schäfer&lt;/a&gt;. I’d like to take the time to personally thank Vladimír and our fantastic community for their tireless work. Without all of their efforts, this project would not be what it is today.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Vladimír, our amazing community, and the Spring engineering team are planning to team up to enhance Spring Security SAML to achieve the following primary goals:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="ulist"&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Ensuring all dependencies are up to date&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ensure all Spring Security APIs do not expose any dependency APIs&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Graduate Spring Security SAML from an extension into Spring Security proper&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Starting today &lt;a href="https://github.com/fhanik"&gt;Filip Hanik&lt;/a&gt; will be working full time on Spring Security SAML to help the community push these goals forward in a timely manner. If you would like to get involved, please &lt;a href="https://github.com/spring-projects/spring-security-saml"&gt;join us&lt;/a&gt;. You may also ping me in the comments on this blog or ping us on Twitter at &lt;a href="https://twitter.com/rob_winch"&gt;@rob_winch&lt;/a&gt; and &lt;a href="https://twitter.com/fhanik"&gt;@fhanik&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;&lt;a href="http://projects.spring.io/spring-security-saml/"&gt;Project Site&lt;/a&gt; |
+&lt;a href="https://docs.spring.io/spring-security-saml/docs/current/reference/htmlsingle/"&gt;Reference&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-security"&gt;Help&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Spring Cloud Finchley M8 is available</title>
     <link rel="alternate" href="https://spring.io/blog/2018/03/02/spring-cloud-finchley-m8-is-available" />
@@ -1279,46 +1365,5 @@ This is useful in conjunction with the &lt;code&gt;IntegrationFlowContext&lt;/co
 &lt;p&gt;To get started with Spring Boot 2.0.0 RC2, you can easily bootstrap a new project on &lt;a href="https://start.spring.io"&gt;start.spring.io&lt;/a&gt;. If you are upgrading from Spring Boot 1.5 (or earlier) please refer to the &lt;a href="https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-2.0-Migration-Guide"&gt;migration guide&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Thanks to everyone that has contributed to Spring Boot 2.0 so far!&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://projects.spring.io/spring-boot/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-boot/docs/2.0.0.RC2/reference/htmlsingle"&gt;Documentation&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-boot"&gt;Stack Overflow&lt;/a&gt; | &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Security 5.0.2 Released</title>
-    <link rel="alternate" href="https://spring.io/blog/2018/02/20/spring-security-5-0-2-released" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Rob Winch</name>
-    </author>
-    <id>tag:spring.io,2018-02-20:3174</id>
-    <updated>2018-02-20T14:04:56Z</updated>
-    <content type="html">&lt;div class="paragraph"&gt;
-&lt;p&gt;I&amp;#8217;m pleased to announce the release of Spring Security 5.0.2. This release fixes a number of bugs and updates to dependency versions to align with Spring Boot&amp;#8217;s upcoming release. It also includes some changes to work with &lt;a href="https://github.com/spring-projects/spring-security/issues/4985"&gt;Jackson 2.9.4&lt;/a&gt;. For a complete list of changes, refer to the &lt;a href="https://github.com/spring-projects/spring-security/issues?page=1&amp;amp;q=milestone%3A5.0.2+is%3Aclosed"&gt;changelog&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;&lt;a href="http://projects.spring.io/spring-security/"&gt;Project Site&lt;/a&gt; |
-&lt;a href="http://docs.spring.io/spring-security/site/docs/current/reference/htmlsingle/"&gt;Reference&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-security"&gt;Help&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Vault 2.0 GA released</title>
-    <link rel="alternate" href="https://spring.io/blog/2018/02/20/spring-vault-2-0-ga-released" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Mark Paluch</name>
-    </author>
-    <id>tag:spring.io,2018-02-20:3176</id>
-    <updated>2018-02-20T10:26:48Z</updated>
-    <content type="html">&lt;p&gt;On behalf of the community, I&amp;rsquo;m pleased to announce the general availability of Spring Vault 2.0. Since the first efforts for Spring Vault 2.0, it has been a 10 months ride until we reached this GA release. These are the most significant changes in Spring Vault 2.0:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Upgrade to Java 8 and Spring Framework 5.&lt;/li&gt;
-  &lt;li&gt;Reactive Support.&lt;/li&gt;
-  &lt;li&gt;Improved null-safety by providing JSR-305 annotated API.&lt;/li&gt;
-  &lt;li&gt;Vault repository support through Spring Data KeyValue repositories.&lt;/li&gt;
-  &lt;li&gt;Kubernetes, AWS ECS/IAM authentication.&lt;/li&gt;
-  &lt;li&gt;RoleId/SecretId unwrapping for AppId authentication.&lt;/li&gt;
-  &lt;li&gt;Spring Security integration with &lt;code&gt;VaultBytesEncryptor&lt;/code&gt; and &lt;code&gt;VaultRandomBytesKeyGenerator&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;This release is compatible with Vault version from &lt;code&gt;0.5.2&lt;/code&gt; up to &lt;code&gt;0.9.3&lt;/code&gt; and will be picked up by Spring Cloud Vault &lt;code&gt;2.0 M6&lt;/code&gt; for your convenience.&lt;/p&gt;&lt;h2&gt;&lt;a href="#outlook" class="anchor" name="outlook"&gt;&lt;/a&gt;Outlook&lt;/h2&gt;
-&lt;p&gt;We&amp;rsquo;re aiming towards a 2.0 release with Spring Cloud Vault to provide full interoperability with the upcoming Spring Boot 2.0 release. Besides that, we want to support Google Cloud authentication and add support for the &lt;a href="https://github.com/hashicorp/vault/issues/1986"&gt;JOSE/JWT backend&lt;/a&gt; once it arrives in Vault.&lt;/p&gt;
-&lt;p&gt;For a complete list of changes see the &lt;a href="http://docs.spring.io/spring-vault/docs/2.0.0.RELEASE/changelog.txt"&gt;changelog&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://projects.spring.io/spring-vault/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-vault"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-vault/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-vault/docs/2.0.0.RELEASE/reference/html/"&gt;Documentation&lt;/a&gt; | &lt;a href="https://github.com/mp911de/spring-cloud-vault-config-samples/"&gt;Examples&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-vault"&gt;Stack Overflow&lt;/a&gt;&lt;/p&gt;</content>
   </entry>
 </feed>

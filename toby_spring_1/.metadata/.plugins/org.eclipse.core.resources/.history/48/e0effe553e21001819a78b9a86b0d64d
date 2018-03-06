@@ -1,0 +1,10 @@
+package springbook.learningtest.template;
+
+public class CalcSumTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
