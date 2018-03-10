@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
-<fullyQualifiedTypeName name="springbook.user.dao.ConnectionMaker"/>
-<fullyQualifiedTypeName name="springbook.user.dao.DConnectionMaker"/>
-<fullyQualifiedTypeName name="java.lang.ClassNotFoundException"/>
-<fullyQualifiedTypeName name="springbook.user.dao.CountingDaoFactory"/>
-<fullyQualifiedTypeName name="com.mysql.fabric.xmlrpc.base.Data"/>
 <fullyQualifiedTypeName name="org.springframework.context.annotation.AnnotationConfigApplicationContext"/>
 <fullyQualifiedTypeName name="springbook.user.dao.DaoFactory"/>
 <fullyQualifiedTypeName name="org.springframework.context.support.GenericXmlApplicationContext"/>
@@ -19,9 +13,6 @@
 <fullyQualifiedTypeName name="java.util.Set"/>
 <fullyQualifiedTypeName name="springbook.learningtest.junit.JUnitTest"/>
 <fullyQualifiedTypeName name="java.util.HashSet"/>
-<fullyQualifiedTypeName name="org.junit.runner.RunWith"/>
-<fullyQualifiedTypeName name="org.springframework.test.context.junit4.SpringJUnit4ClassRunner"/>
-<fullyQualifiedTypeName name="org.springframework.test.context.ContextConfiguration"/>
 <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
 <fullyQualifiedTypeName name="springbook.user.dao.DeleteAllStatement"/>
 <fullyQualifiedTypeName name="springbook.user.dao.AddStatement"/>
@@ -30,7 +21,6 @@
 <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
 <fullyQualifiedTypeName name="springbook.user.dao.JdbcContext"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
-<fullyQualifiedTypeName name="org.junit.Before"/>
 <fullyQualifiedTypeName name="springbook.learningtest.template.Calculator"/>
 <fullyQualifiedTypeName name="springbook.learningtest.template.BufferdReaderCallback"/>
 <fullyQualifiedTypeName name="java.io.BufferedReader"/>
@@ -48,16 +38,26 @@
 <fullyQualifiedTypeName name="com.mysql.jdbc.MysqlErrorNumbers"/>
 <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
 <fullyQualifiedTypeName name="springbook.user.dao.DuplicateUserIdException"/>
-<fullyQualifiedTypeName name="springbook.user.domian.User"/>
-<fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="springbook.user.dao.UserDao"/>
-<fullyQualifiedTypeName name="org.junit.Test"/>
 <fullyQualifiedTypeName name="java.sql.SQLException"/>
 <fullyQualifiedTypeName name="org.springframework.jdbc.support.SQLExceptionTranslator"/>
 <fullyQualifiedTypeName name="org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator"/>
-<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 <fullyQualifiedTypeName name="javax.sql.DataSource"/>
 <fullyQualifiedTypeName name="org.hamcrest.core.IsInstanceOf"/>
 <fullyQualifiedTypeName name="org.springframework.dao.DuplicateKeyException"/>
 <fullyQualifiedTypeName name="org.springframework.dao.DataAccessException"/>
+<fullyQualifiedTypeName name="java.lang.AssertionError"/>
+<fullyQualifiedTypeName name="org.junit.runner.RunWith"/>
+<fullyQualifiedTypeName name="org.springframework.test.context.junit4.SpringJUnit4ClassRunner"/>
+<fullyQualifiedTypeName name="org.springframework.test.context.ContextConfiguration"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="springbook.user.service.UserService"/>
+<fullyQualifiedTypeName name="java.lang.Boolean"/>
+<fullyQualifiedTypeName name="org.jboss.logging.Logger.Level"/>
+<fullyQualifiedTypeName name="org.junit.Before"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="springbook.user.domian.User"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="springbook.user.dao.UserDao"/>
+<fullyQualifiedTypeName name="org.junit.Test"/>
+<fullyQualifiedTypeName name="springbook.user.domian.Level"/>
 </qualifiedTypeNameHistroy>
