@@ -1,0 +1,5 @@
+package springbook.user.service;
+
+static class TestUserServiceException extends RuntimeException {
+
+}

@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="springbook.user.dao.CountingConnectionMaker"/>
-<fullyQualifiedTypeName name="org.junit.runner.JUnitCore"/>
-<fullyQualifiedTypeName name="javax.naming.spi.DirStateFactory.Result"/>
-<fullyQualifiedTypeName name="org.springframework.dao.EmptyResultDataAccessException"/>
-<fullyQualifiedTypeName name="org.springframework.test.annotation.DirtiesContext"/>
-<fullyQualifiedTypeName name="org.springframework.jdbc.datasource.SingleConnectionDataSource"/>
 <fullyQualifiedTypeName name="java.util.Set"/>
 <fullyQualifiedTypeName name="springbook.learningtest.junit.JUnitTest"/>
 <fullyQualifiedTypeName name="java.util.HashSet"/>
@@ -13,7 +7,6 @@
 <fullyQualifiedTypeName name="springbook.user.dao.DeleteAllStatement"/>
 <fullyQualifiedTypeName name="springbook.user.dao.AddStatement"/>
 <fullyQualifiedTypeName name="springbook.user.dao.StatementStrategy"/>
-<fullyQualifiedTypeName name="java.sql.Connection"/>
 <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
 <fullyQualifiedTypeName name="springbook.user.dao.JdbcContext"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
@@ -31,12 +24,10 @@
 <fullyQualifiedTypeName name="javassist.tools.Dump"/>
 <fullyQualifiedTypeName name="java.lang.Throwable"/>
 <fullyQualifiedTypeName name="com.mysql.jdbc.MysqlErrorNumbers"/>
-<fullyQualifiedTypeName name="java.lang.RuntimeException"/>
 <fullyQualifiedTypeName name="springbook.user.dao.DuplicateUserIdException"/>
 <fullyQualifiedTypeName name="java.sql.SQLException"/>
 <fullyQualifiedTypeName name="org.springframework.jdbc.support.SQLExceptionTranslator"/>
 <fullyQualifiedTypeName name="org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator"/>
-<fullyQualifiedTypeName name="javax.sql.DataSource"/>
 <fullyQualifiedTypeName name="org.hamcrest.core.IsInstanceOf"/>
 <fullyQualifiedTypeName name="org.springframework.dao.DuplicateKeyException"/>
 <fullyQualifiedTypeName name="org.springframework.dao.DataAccessException"/>
@@ -44,7 +35,6 @@
 <fullyQualifiedTypeName name="org.junit.runner.RunWith"/>
 <fullyQualifiedTypeName name="org.springframework.test.context.junit4.SpringJUnit4ClassRunner"/>
 <fullyQualifiedTypeName name="org.springframework.test.context.ContextConfiguration"/>
-<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 <fullyQualifiedTypeName name="java.lang.Boolean"/>
 <fullyQualifiedTypeName name="org.jboss.logging.Logger.Level"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
@@ -54,10 +44,20 @@
 <fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
 <fullyQualifiedTypeName name="java.lang.IllegalStateException"/>
 <fullyQualifiedTypeName name="org.junit.Before"/>
-<fullyQualifiedTypeName name="springbook.user.domian.Level"/>
 <fullyQualifiedTypeName name="org.hibernate.ejb.criteria.predicate.TruthValue"/>
-<fullyQualifiedTypeName name="springbook.user.service.UserService"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
-<fullyQualifiedTypeName name="springbook.user.domian.User"/>
 <fullyQualifiedTypeName name="springbook.user.service.UserLevelUpgradePolicy"/>
+<fullyQualifiedTypeName name="springbook.user.domian.Level"/>
+<fullyQualifiedTypeName name="org.junit.runner.JUnitCore"/>
+<fullyQualifiedTypeName name="springbook.user.domian.User"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+<fullyQualifiedTypeName name="springbook.user.service.UserService"/>
+<fullyQualifiedTypeName name="springbook.user.service.TestUserService"/>
+<fullyQualifiedTypeName name="springbook.user.service.TestUserService.TestUserServiceException"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="org.springframework.jdbc.datasource.DataSourceUtils"/>
+<fullyQualifiedTypeName name="org.springframework.transaction.support.TransactionSynchronizationManager"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="javax.sql.DataSource"/>
 </qualifiedTypeNameHistroy>

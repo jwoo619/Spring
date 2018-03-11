@@ -1,0 +1,10 @@
+package springbook.user.service;
+
+public class TestUserService extends UserService {
+	private String id;
+	
+	private TestUserService(String id){
+		this.id = id;
+	}
+
+}
