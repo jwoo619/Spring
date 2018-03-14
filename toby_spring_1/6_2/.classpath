@@ -34,5 +34,6 @@
 	<classpathentry kind="lib" path="/Users/Jinwoo/Desktop/Spring/toby_spring_1/apache-tomcat-8.5.27/apache-tomcat-8.5.27/lib/spring-context-support-3.0.7.release.jar"/>
 	<classpathentry kind="lib" path="/Users/Jinwoo/Desktop/Spring/toby_spring_1/apache-tomcat-8.5.27/apache-tomcat-8.5.27/lib/spring-jdbc-3.0.7.release.jar"/>
 	<classpathentry kind="lib" path="/Users/Jinwoo/Desktop/Spring/toby_spring_1/apache-tomcat-8.5.27/apache-tomcat-8.5.27/lib/spring-test-3.0.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/Users/Jinwoo/Downloads/mockito-all-1.9.5.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

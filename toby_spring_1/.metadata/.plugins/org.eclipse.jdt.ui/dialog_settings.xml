@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item value="/Users/Jinwoo/Desktop/Spring/toby_spring_1/apache-tomcat-8.5.27/apache-tomcat-8.5.27/lib" key="org.eclipse.jdt.ui.lastextjar"/>
+	<item value="/Users/Jinwoo/Downloads" key="org.eclipse.jdt.ui.lastextjar"/>
 	<section name="ProblemSeveritiesConfigurationBlock">
 		<item value="false" key="expanded2"/>
 		<item value="false" key="expanded1"/>
