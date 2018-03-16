@@ -1,0 +1,7 @@
+package springbook.learningtest.spring.factorybean;
+
+import org.springframework.beans.factory.FactoryBean;
+
+public class MessageFactoryBean implements FactoryBean<T> {
+
+}

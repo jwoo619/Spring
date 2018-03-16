@@ -1,0 +1,8 @@
+package springbook.learningtest.spring.factorybean.Message;
+
+public class Message {
+	String text;
+	
+	private
+
+}

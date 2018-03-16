@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;springbook.learningtest.spring.factorybean.Message&apos; to &apos;springbook.learningtest.spring.factorybean&apos;&#x0A;- Original project: &apos;6_3&apos;&#x0A;- Original element: &apos;6_3/src/main/java/springbook.learningtest.spring.factorybean.Message&apos;&#x0A;- Renamed element: &apos;6_3/src/main/java/springbook.learningtest.spring.factorybean&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;springbook.learningtest.spring.factorybean.Message&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java&lt;springbook.learningtest.spring.factorybean.Message" name="springbook.learningtest.spring.factorybean" qualified="false" references="true" stamp="1521214611137" textual="false" version="1.0"/>
+</session>
