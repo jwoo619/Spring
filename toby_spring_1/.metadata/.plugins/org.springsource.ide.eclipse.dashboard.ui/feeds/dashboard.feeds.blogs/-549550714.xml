@@ -5,7 +5,28 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2018-03-16T14:50:09Z</updated>
+  <updated>2018-03-16T16:13:46Z</updated>
+  <entry>
+    <title>Spring Security OAuth 2.3.0 Released</title>
+    <link rel="alternate" href="https://spring.io/blog/2018/03/16/spring-security-oauth-2-3-0-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Joe Grandja</name>
+    </author>
+    <id>tag:spring.io,2018-03-16:3211</id>
+    <updated>2018-03-16T16:13:46Z</updated>
+    <content type="html">&lt;div class="paragraph"&gt;
+&lt;p&gt;On behalf of the community, I&amp;#8217;m pleased to announce the release of Spring Security OAuth 2.3.0.RELEASE.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The &lt;a href="https://github.com/spring-projects/spring-security-oauth/milestone/30?closed=1"&gt;2.3.0 release&lt;/a&gt; adds new support for Elliptic Curve signature verification in &lt;code&gt;JwkTokenStore&lt;/code&gt;. Thank you &lt;a href="https://github.com/duergner"&gt;Michael Duergner&lt;/a&gt; for this contribution! This release also includes a few minor enhancements and bug fixes.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;&lt;a href="http://projects.spring.io/spring-security-oauth/"&gt;Project Page&lt;/a&gt; |
+&lt;a href="https://github.com/spring-projects/spring-security-oauth/"&gt;GitHub&lt;/a&gt; |
+&lt;a href="http://projects.spring.io/spring-security-oauth/docs/Home.html"&gt;Documentation&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-security-oauth2"&gt;Help&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Micrometer: Spring Boot 2's new application metrics collector</title>
     <link rel="alternate" href="https://spring.io/blog/2018/03/16/micrometer-spring-boot-2-s-new-application-metrics-collector" />
@@ -354,6 +375,33 @@ http.server.requests.response.200.uri./bar=5
 &lt;p&gt;Micrometer support is available on slack at &lt;a href="https://slack.micromter.io"&gt;slack.micrometer.io&lt;/a&gt;, on Twitter &lt;a href="https://twitter.com/micrometerio"&gt;@micrometerio&lt;/a&gt;, and on &lt;a href="https://github.com/micrometer-metrics/micrometer"&gt;Github&lt;/a&gt;. Don&amp;#8217;t hesitate to reach out with questions, suggestions, or problems!&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Security SAML 1.0.4 Released</title>
+    <link rel="alternate" href="https://spring.io/blog/2018/03/16/spring-security-saml-1-0-4-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Filip Hanik</name>
+    </author>
+    <id>tag:spring.io,2018-03-16:3212</id>
+    <updated>2018-03-16T12:55:00Z</updated>
+    <content type="html">&lt;div class="paragraph"&gt;
+&lt;p&gt;The Spring Security SAML project team is proud to announce our latest 1.0.4.RELEASE. This maintenance release pushes its dependencies to the latest known working version while staying backwards compatible.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;This release requires an additional &lt;a href="http://repository.mulesoft.org/releases/"&gt;Maven repository&lt;/a&gt; to download the latest version of the not-yet-commons-ssl dependency.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Moving forward we will be working on our 2.0.0 release. This release aims to provide an easy upgrade path for users of the 1.0.x releases while modernizing the underlying dependencies for easy up keep.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Feedback and contributions are always appreciated. Stay tuned.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;&lt;a href="http://projects.spring.io/spring-security-saml/"&gt;Project Site&lt;/a&gt; |
+&lt;a href="https://github.com/spring-projects/spring-security-saml/"&gt;GitHub&lt;/a&gt; |
+&lt;a href="https://docs.spring.io/spring-security-saml/docs/current/reference/htmlsingle/"&gt;Reference&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-security"&gt;Help&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;</content>
   </entry>
   <entry>
@@ -1530,163 +1578,5 @@ dependencies {
 &lt;p&gt;Over the next couple of weeks we&amp;rsquo;ll be publishing blog posts that cover some Spring Boot 2.0 features in detail. You should also join us for &lt;a href="https://content.pivotal.io/webinars/mar-13-introducing-reactive-spring-boot-2-0-webinar"&gt;a webinar on March 13th&lt;/a&gt; where we&amp;rsquo;ll dive deeper into what upgrading looks like. &lt;/p&gt;
 &lt;p&gt;Thanks again to everyone that has contributed to Spring and Spring Boot over the years! A special thank you also to the developers of the other projects in the Spring portfolio, without whom there would be no Spring Boot.&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://projects.spring.io/spring-boot/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-boot/docs/2.0.0.RELEASE/reference/htmlsingle"&gt;Documentation&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-boot"&gt;Stack Overflow&lt;/a&gt; | &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Reactor BISMUTH-SR7 is out!</title>
-    <link rel="alternate" href="https://spring.io/blog/2018/02/28/reactor-bismuth-sr7-is-out" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Simon Baslé</name>
-    </author>
-    <id>tag:spring.io,2018-02-27:3187</id>
-    <updated>2018-02-28T17:20:00Z</updated>
-    <content type="html">&lt;div class="paragraph"&gt;
-&lt;p&gt;On behalf of the whole Reactor Team, it is my pleasure to announce that the
-Reactor &lt;code&gt;BISMUTH-SR7&lt;/code&gt; release train is now available. As always, we recommend
-using the &lt;a href="http://projectreactor.io/docs/core/release/reference/docs/index.html#getting"&gt;&lt;code&gt;reactor-bom&lt;/code&gt; Bill Of Material&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;In time for Spring Boot 2, this release train comes with improvements and
-bugfixes to core, extras, and reactor-netty.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;&lt;em&gt;This blog post highlights
-the most significant changes in both SR7 and last week&amp;#8217;s SR6 release trains.&lt;/em&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;h1 id="reactor-core-3-1-5" class="sect0"&gt;&lt;a class="anchor" href="#reactor-core-3-1-5"&gt;&lt;/a&gt;Reactor-Core 3.1.5&lt;/h1&gt;
-&lt;div class="quoteblock"&gt;
-&lt;blockquote&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;What&amp;#8217;s new since &lt;code&gt;3.1.3&lt;/code&gt;? See the full release notes of the
-&lt;a href="https://github.com/reactor/reactor-core/releases/tag/v3.1.4.RELEASE"&gt;&lt;code&gt;3.1.4.RELEASE&lt;/code&gt;&lt;/a&gt;
-and the &lt;a href="https://github.com/reactor/reactor-core/releases/tag/v3.1.5.RELEASE"&gt;&lt;code&gt;3.1.5.RELEASE&lt;/code&gt;&lt;/a&gt;.
-Core changes include more than 15 improvements and bugfixes.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;A few new operators have landed in this release: For example, &lt;code&gt;mergeOrdered&lt;/code&gt; has been added to &lt;code&gt;Flux&lt;/code&gt; and &lt;code&gt;ParallelFlux&lt;/code&gt;. It lets you merge multiple sources by continuously picking the smallest available value among all the sources, as defined by a provided &lt;code&gt;Comparator&lt;/code&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;For convenience, we also added &lt;code&gt;Flux#concatWithValues(T&amp;#8230;&amp;#8203;)&lt;/code&gt; and &lt;code&gt;Mono#thenReturn(T)&lt;/code&gt; , allowing easy concatenation/continuation with scalar values.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;To kickstart our introspection theme of 2018, our implementations of &lt;code&gt;Scheduler&lt;/code&gt; are &lt;code&gt;Scannable&lt;/code&gt; and are thus meaningful when used with &lt;code&gt;Scannable#from&lt;/code&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Notable update considerations include the fix of &lt;code&gt;Mono.zip&lt;/code&gt; behavior, aligning it to that of &lt;code&gt;Flux.zip&lt;/code&gt;: It now cancels in-flight sources as soon as one source completes with &lt;strong&gt;empty&lt;/strong&gt; or throws an error. If all the &lt;code&gt;Mono&lt;/code&gt; sources you &lt;code&gt;zip&lt;/code&gt; together are guaranteed to be value, this changes nothing.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="admonitionblock tip"&gt;
-&lt;table&gt;
-&lt;tr&gt;
-&lt;td class="icon"&gt;
-&lt;div class="title"&gt;Tip&lt;/div&gt;
-&lt;/td&gt;
-&lt;td class="content"&gt;
-If you don&amp;#8217;t care about the results but want to make sure the whole of N sources have all completed, prefer using &lt;code&gt;Mono.when&lt;/code&gt;. In particular, look out for a &lt;code&gt;.zip(&amp;#8230;&amp;#8203;).then()&lt;/code&gt; pattern, which should be replaced by &lt;code&gt;.when(&amp;#8230;&amp;#8203;)&lt;/code&gt;.
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/table&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Another change that is less likely to have been noticed by our users is fixing the visibility of a couple of classes that were never intended for the public:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="ulist"&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;The MPSC Queue implementation from 3.1.3.RELEASE is now exposed &lt;strong&gt;only&lt;/strong&gt; as a plain &lt;code&gt;Queue&lt;/code&gt; through &lt;code&gt;Queues.unboundedMultiproducer()&lt;/code&gt;. This concrete class is now package-private.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;FluxDelaySequence&lt;/code&gt;, &lt;code&gt;FluxIndex&lt;/code&gt; and &lt;code&gt;FluxIndexFuseable&lt;/code&gt; are now also package-private.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Bug fixes also include a few GC-friendly fixes, stopping unnecessary retaining of &lt;code&gt;elastic&lt;/code&gt; &lt;code&gt;Scheduler&lt;/code&gt; workers and event-loop based Processors' background task in case of &lt;code&gt;forceShutdown()&lt;/code&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;h1 id="reactor-addons-3-1-6" class="sect0"&gt;&lt;a class="anchor" href="#reactor-addons-3-1-6"&gt;&lt;/a&gt;Reactor Addons 3.1.6&lt;/h1&gt;
-&lt;div class="quoteblock"&gt;
-&lt;blockquote&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;What&amp;#8217;s new since &lt;code&gt;3.1.4&lt;/code&gt;? See the full release notes of the
-&lt;a href="https://github.com/reactor/reactor-addons/releases/tag/v3.1.5.RELEASE"&gt;&lt;code&gt;3.1.5.RELEASE&lt;/code&gt;&lt;/a&gt;
-and the &lt;a href="https://github.com/reactor/reactor-addons/releases/tag/v3.1.6.RELEASE"&gt;&lt;code&gt;3.1.6.RELEASE&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Addons has seen a couple of fixes and improvements.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;The newly introduced opinionated helper for caching was released with a few package-private interfaces that should have been &lt;code&gt;public&lt;/code&gt;. This is embarrassing. :( It has now been fixed.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;A new &lt;code&gt;Repeat#create&lt;/code&gt; factory method variant has been introduced. It allows combining a &lt;code&gt;Predicate&lt;/code&gt; and a maximum amount of repeat attempts.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="admonitionblock note"&gt;
-&lt;table&gt;
-&lt;tr&gt;
-&lt;td class="icon"&gt;
-&lt;div class="title"&gt;Note&lt;/div&gt;
-&lt;/td&gt;
-&lt;td class="content"&gt;
-Speaking of &lt;code&gt;Repeat&lt;/code&gt; and its sister, &lt;code&gt;Retry&lt;/code&gt;, some user noticed that the default behavior feels a bit misaligned with the core&amp;#8217;s dumbed-down &lt;code&gt;repeat()&lt;/code&gt; and &lt;code&gt;retry()&lt;/code&gt; variants: Without further configuration, the helpers are capped at a single attempt, where the core versions keep on repeating or retrying. Furthermore, this is changed by chaining in &lt;code&gt;timeout&lt;/code&gt;, which switches to an uncapped attempt behavior (which has been clarified in its javadoc).
-&lt;br&gt;
-&lt;br&gt;
-We are thinking about realigning this behavior with core in &lt;code&gt;3.2.0&lt;/code&gt;. Please chime in on the &lt;a href="https://github.com/reactor/reactor-addons/issues/149"&gt;issue&lt;/a&gt; if you have any insight or feedback.
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/table&gt;
-&lt;/div&gt;
-&lt;h1 id="reactor-netty-0-7-5" class="sect0"&gt;&lt;a class="anchor" href="#reactor-netty-0-7-5"&gt;&lt;/a&gt;Reactor-Netty 0.7.5&lt;/h1&gt;
-&lt;div class="quoteblock"&gt;
-&lt;blockquote&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;What&amp;#8217;s new since &lt;code&gt;0.7.3&lt;/code&gt;? See the full release notes of the
-&lt;a href="https://github.com/reactor/reactor-netty/releases/tag/v0.7.4.RELEASE"&gt;&lt;code&gt;0.7.4.RELEASE&lt;/code&gt;&lt;/a&gt;
-and the &lt;a href="https://github.com/reactor/reactor-netty/releases/tag/v0.7.5.RELEASE"&gt;&lt;code&gt;0.7.5.RELEASE&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Reactor-Netty has also seen quite a few fixes, mostly around pooling and the connection lifecycle.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;New goodies include support for expect 100-continue, as well as better Reactor &lt;code&gt;Context&lt;/code&gt; handling, by passing Netty pipelines to it when relevant.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Compression support has also been improved, allowing per-response activation of compression.
-This slightly supersedes the &lt;code&gt;minCompressionThreshold&lt;/code&gt; feature that was already in place (albeit it was not 100% reliable). It is based on a &lt;code&gt;BiPredicate&amp;lt;Req,Resp&amp;gt;&lt;/code&gt; that could, for instance, activate compression only on certain content types. The minimum compression threshold option is backed by a &lt;code&gt;content-length&lt;/code&gt; predicate.&lt;/p&gt;
-&lt;/div&gt;
-&lt;h1 id="what-s-next" class="sect0"&gt;&lt;a class="anchor" href="#what-s-next"&gt;&lt;/a&gt;What&amp;#8217;s Next&lt;/h1&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;We encourage you to grab these new artifacts, but, if you&amp;#8217;re a Spring Boot user, you&amp;#8217;ll be delighted to learn you&amp;#8217;ll be rewarded with the same goodies as soon as you upgrade to the upcoming Spring Boot 2.0.0 GA release. :)&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;As always, feedback is welcome. Come and discuss this release on &lt;a href="https://gitter.im/reactor/reactor"&gt;Gitter&lt;/a&gt; or consider opening an &lt;a href="https://github.com/reactor/reactor-core/issues/new"&gt;issue on GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;&lt;strong&gt;In the meantime, happy reactive coding!&lt;/strong&gt;&lt;/p&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Security 5.0.3 Released</title>
-    <link rel="alternate" href="https://spring.io/blog/2018/02/28/spring-security-5-0-3-released" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Rob Winch</name>
-    </author>
-    <id>tag:spring.io,2018-02-28:3193</id>
-    <updated>2018-02-28T16:53:50Z</updated>
-    <content type="html">&lt;div class="paragraph"&gt;
-&lt;p&gt;I&amp;#8217;m pleased to announce the release of Spring Security 5.0.3.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;The main purpose of this release is to provide a significant &lt;a href="https://github.com/spring-projects/spring-security/issues/5040"&gt;performance improvement&lt;/a&gt; for Spring Security WebFlux. It also contains dependency updates to prepare for Spring Boot 2.0.0.RELEASE. For a complete list of changes, refer to the &lt;a href="https://github.com/spring-projects/spring-security/milestone/111?closed=1"&gt;changelog&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;&lt;a href="http://projects.spring.io/spring-security/"&gt;Project Site&lt;/a&gt; |
-&lt;a href="http://docs.spring.io/spring-security/site/docs/current/reference/htmlsingle/"&gt;Reference&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-security"&gt;Help&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;</content>
   </entry>
 </feed>

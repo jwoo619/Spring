@@ -1,0 +1,24 @@
+package springbook.learningtest.jdk.proxy;
+
+import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.assertThat;
+
+import java.lang.reflect.Proxy;
+
+import org.junit.Test;
+
+import springbook.learningtest.jdk.Hello;
+import springbook.learningtest.jdk.HelloTarget;
+import springbook.learningtest.jdk.UppercaseHandler;
+
+public class DynamicProxyTest {
+	@Test
+	public void simpleProxy(){
+		Hello proxieHello = (Hello)Proxy.newProxyInstance(getClass().getClassLoader(), new Class[] {Hello.class}, new UppercaseHandler(new HelloTarget()));
+		assertThat(proxiedHello.sayHello("Tello"), is("HELLO TELLO"));
+		assertThat(proxiedHello.sayHi("Tello"), is("HI TELLO"));
+		assertThat(proxiedHello.sayThankYou("Tello"), is("THANK YOU TELLO"));
+		
+	}
+
+}

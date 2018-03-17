@@ -6,4 +6,5 @@
 <typeInfo handle="=6_3/src\/main\/java&lt;springbook.learningtest.jdk{Hello.java[Hello" modifiers="512" timestamp="1521125393000"/>
 <typeInfo handle="=6_3/\/Library\/Java\/JavaVirtualMachines\/jdk1.8.0_131.jdk\/Contents\/Home\/jre\/lib\/rt.jar&lt;java.lang.reflect(InvocationHandler.class[InvocationHandler" modifiers="1537" timestamp="1489567893000"/>
 <typeInfo handle="=6_3/\/Users\/Jinwoo\/.m2\/repository\/org\/springframework\/spring-beans\/3.2.3.RELEASE\/spring-beans-3.2.3.RELEASE.jar&lt;org.springframework.beans.factory(FactoryBean.class[FactoryBean" modifiers="1537" timestamp="1517303500000"/>
+<typeInfo handle="=6_4/\/Users\/Jinwoo\/.m2\/repository\/aopalliance\/aopalliance\/1.0\/aopalliance-1.0.jar&lt;org.aopalliance.intercept(MethodInterceptor.class[MethodInterceptor" modifiers="1537" timestamp="1517303501000"/>
 </typeInfoHistroy>

@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="springbook.user.service.UserLevelUpgradePolicy"/>
-<fullyQualifiedTypeName name="org.junit.runner.JUnitCore"/>
-<fullyQualifiedTypeName name="java.lang.RuntimeException"/>
-<fullyQualifiedTypeName name="springbook.user.service.TestUserService"/>
-<fullyQualifiedTypeName name="springbook.user.service.TestUserService.TestUserServiceException"/>
-<fullyQualifiedTypeName name="java.sql.Connection"/>
-<fullyQualifiedTypeName name="org.springframework.jdbc.datasource.DataSourceUtils"/>
-<fullyQualifiedTypeName name="org.springframework.transaction.support.TransactionSynchronizationManager"/>
-<fullyQualifiedTypeName name="javax.sql.DataSource"/>
 <fullyQualifiedTypeName name="org.springframework.jdbc.datasource.DataSourceTransactionManager"/>
 <fullyQualifiedTypeName name="javax.transaction.TransactionManager"/>
 <fullyQualifiedTypeName name="org.springframework.transaction.jta.JtaTransactionManager"/>
@@ -33,13 +24,7 @@
 <fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="java.lang.Character"/>
 <fullyQualifiedTypeName name="springbook.learningtest.jdk.HelloUppercase"/>
-<fullyQualifiedTypeName name="springbook.learningtest.jdk.Hello"/>
-<fullyQualifiedTypeName name="springbook.learningtest.jdk.UppercaseHandler"/>
-<fullyQualifiedTypeName name="springbook.learningtest.jdk.HelloTarget"/>
 <fullyQualifiedTypeName name="java.lang.reflect.Method"/>
-<fullyQualifiedTypeName name="java.lang.Throwable"/>
-<fullyQualifiedTypeName name="org.springframework.transaction.TransactionStatus"/>
-<fullyQualifiedTypeName name="org.springframework.transaction.support.DefaultTransactionDefinition"/>
 <fullyQualifiedTypeName name="java.lang.reflect.InvocationTargetException"/>
 <fullyQualifiedTypeName name="org.springframework.transaction.config.TxNamespaceHandler"/>
 <fullyQualifiedTypeName name="java.lang.Class"/>
@@ -47,17 +32,32 @@
 <fullyQualifiedTypeName name="org.springframework.test.context.junit4.SpringJUnit4ClassRunner"/>
 <fullyQualifiedTypeName name="org.springframework.test.context.ContextConfiguration"/>
 <fullyQualifiedTypeName name="javafx.application.Application"/>
-<fullyQualifiedTypeName name="org.junit.Test"/>
 <fullyQualifiedTypeName name="springbook.learningtest.spring.factorybean.Message"/>
 <fullyQualifiedTypeName name="springbook.learningtest.spring.factorybean.MessageFactoryBean"/>
-<fullyQualifiedTypeName name="java.lang.Object"/>
-<fullyQualifiedTypeName name="org.springframework.transaction.PlatformTransactionManager"/>
 <fullyQualifiedTypeName name="java.lang.Exception"/>
 <fullyQualifiedTypeName name="springbook.learningtest.jdk.TransactionHandler"/>
-<fullyQualifiedTypeName name="java.lang.reflect.Proxy"/>
 <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
 <fullyQualifiedTypeName name="org.springframework.test.annotation.DirtiesContext"/>
 <fullyQualifiedTypeName name="springbook.user.service.TxProxyFactoryBean"/>
 <fullyQualifiedTypeName name="springbook.user.service.UserService"/>
+<fullyQualifiedTypeName name="springbook.learningtest.jdk.Hello"/>
+<fullyQualifiedTypeName name="javassist.util.proxy.ProxyFactory"/>
+<fullyQualifiedTypeName name="org.aopalliance.intercept.MethodInterceptor"/>
+<fullyQualifiedTypeName name="org.aopalliance.intercept.MethodInvocation"/>
+<fullyQualifiedTypeName name="java.lang.Throwable"/>
+<fullyQualifiedTypeName name="springbook.learningtest.jdk.proxy.DynamicProxyTest.Hello"/>
+<fullyQualifiedTypeName name="springbook.learningtest.jdk.UppercaseHandler"/>
+<fullyQualifiedTypeName name="springbook.learningtest.jdk.HelloTarget"/>
+<fullyQualifiedTypeName name="org.junit.Test"/>
+<fullyQualifiedTypeName name="java.lang.reflect.Proxy"/>
+<fullyQualifiedTypeName name="springbook.learningtest.jdk.proxy.DynamicProxyTest.HelloTarget"/>
+<fullyQualifiedTypeName name="org.springframework.aop.support.NameMatchMethodPointcut"/>
+<fullyQualifiedTypeName name="org.springframework.aop.support.DefaultPointcutAdvisor"/>
+<fullyQualifiedTypeName name="springbook.learningtest.jdk.proxy.DynamicProxyTest.UppercaseAdvice"/>
+<fullyQualifiedTypeName name="org.springframework.transaction.PlatformTransactionManager"/>
+<fullyQualifiedTypeName name="org.springframework.transaction.TransactionStatus"/>
+<fullyQualifiedTypeName name="org.springframework.transaction.support.DefaultTransactionDefinition"/>
+<fullyQualifiedTypeName name="java.lang.Object"/>
+<fullyQualifiedTypeName name="org.springframework.aop.framework.ProxyFactoryBean"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,16 @@
+package springbook.learningtest.jdk.proxy;
+
+import java.lang.reflect.Proxy;
+
+import org.junit.Test;
+
+import springbook.learningtest.jdk.HelloTarget;
+import springbook.learningtest.jdk.UppercaseHandler;
+
+public class DynamicProxyTest {
+	@Test
+	public void simpleProxy(){
+		Hello proxieHello = (Hello)Proxy.newProxyInstance(getClass().getClassLoader(), new Class[] {Hello.class}, new UppercaseHandler(new HelloTarget()));
+	}
+
+}
