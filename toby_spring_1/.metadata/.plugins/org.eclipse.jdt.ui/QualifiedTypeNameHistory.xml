@@ -1,20 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.springframework.jdbc.datasource.DataSourceTransactionManager"/>
-<fullyQualifiedTypeName name="javax.transaction.TransactionManager"/>
-<fullyQualifiedTypeName name="org.springframework.transaction.jta.JtaTransactionManager"/>
-<fullyQualifiedTypeName name="java.util.Properties"/>
-<fullyQualifiedTypeName name="org.hibernate.Session"/>
-<fullyQualifiedTypeName name="javax.mail.Session"/>
-<fullyQualifiedTypeName name="org.springframework.mail.MailException"/>
-<fullyQualifiedTypeName name="springbook.user.domian.User"/>
-<fullyQualifiedTypeName name="springbook.user.service.UserServiceTest.TestUserService"/>
-<fullyQualifiedTypeName name="springbook.user.service.UserServiceTx"/>
 <fullyQualifiedTypeName name="springbook.user.dao.UserDao"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.lang.UnsupportedOperationException"/>
-<fullyQualifiedTypeName name="springbook.user.service.UserServiceImpl"/>
 <fullyQualifiedTypeName name="springbook.user.domian.Level"/>
 <fullyQualifiedTypeName name="springbook.user.service.UserServiceTest.MockUserDao"/>
 <fullyQualifiedTypeName name="org.mockito.ArgumentCaptor"/>
@@ -36,7 +25,6 @@
 <fullyQualifiedTypeName name="springbook.learningtest.spring.factorybean.MessageFactoryBean"/>
 <fullyQualifiedTypeName name="java.lang.Exception"/>
 <fullyQualifiedTypeName name="springbook.learningtest.jdk.TransactionHandler"/>
-<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
 <fullyQualifiedTypeName name="org.springframework.test.annotation.DirtiesContext"/>
 <fullyQualifiedTypeName name="springbook.user.service.TxProxyFactoryBean"/>
@@ -46,18 +34,30 @@
 <fullyQualifiedTypeName name="org.aopalliance.intercept.MethodInterceptor"/>
 <fullyQualifiedTypeName name="org.aopalliance.intercept.MethodInvocation"/>
 <fullyQualifiedTypeName name="java.lang.Throwable"/>
-<fullyQualifiedTypeName name="springbook.learningtest.jdk.proxy.DynamicProxyTest.Hello"/>
 <fullyQualifiedTypeName name="springbook.learningtest.jdk.UppercaseHandler"/>
 <fullyQualifiedTypeName name="springbook.learningtest.jdk.HelloTarget"/>
-<fullyQualifiedTypeName name="org.junit.Test"/>
-<fullyQualifiedTypeName name="java.lang.reflect.Proxy"/>
-<fullyQualifiedTypeName name="springbook.learningtest.jdk.proxy.DynamicProxyTest.HelloTarget"/>
-<fullyQualifiedTypeName name="org.springframework.aop.support.NameMatchMethodPointcut"/>
-<fullyQualifiedTypeName name="org.springframework.aop.support.DefaultPointcutAdvisor"/>
-<fullyQualifiedTypeName name="springbook.learningtest.jdk.proxy.DynamicProxyTest.UppercaseAdvice"/>
 <fullyQualifiedTypeName name="org.springframework.transaction.PlatformTransactionManager"/>
 <fullyQualifiedTypeName name="org.springframework.transaction.TransactionStatus"/>
 <fullyQualifiedTypeName name="org.springframework.transaction.support.DefaultTransactionDefinition"/>
+<fullyQualifiedTypeName name="org.springframework.aop.ClassFilter"/>
 <fullyQualifiedTypeName name="java.lang.Object"/>
+<fullyQualifiedTypeName name="org.springframework.aop.Pointcut"/>
 <fullyQualifiedTypeName name="org.springframework.aop.framework.ProxyFactoryBean"/>
+<fullyQualifiedTypeName name="org.springframework.aop.support.DefaultPointcutAdvisor"/>
+<fullyQualifiedTypeName name="springbook.learningtest.jdk.proxy.DynamicProxyTest.UppercaseAdvice"/>
+<fullyQualifiedTypeName name="springbook.learningtest.jdk.proxy.DynamicProxyTest.Hello"/>
+<fullyQualifiedTypeName name="springbook.learningtest.jdk.proxy.DynamicProxyTest.HelloTarget"/>
+<fullyQualifiedTypeName name="org.springframework.aop.support.NameMatchMethodPointcut"/>
+<fullyQualifiedTypeName name="org.hibernate.bytecode.buildtime.spi.ClassFilter"/>
+<fullyQualifiedTypeName name="org.springframework.util.PatternMatchUtils"/>
+<fullyQualifiedTypeName name="springbook.user.service.UserServiceImpl"/>
+<fullyQualifiedTypeName name="springbook.user.service.UserServiceTest.TestUserServiceException"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="java.lang.reflect.Proxy"/>
+<fullyQualifiedTypeName name="springbook.learningtest.springbook.pointcut.TargetInterface"/>
+<fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+<fullyQualifiedTypeName name="org.junit.Test"/>
+<fullyQualifiedTypeName name="java.lang.SecurityException"/>
+<fullyQualifiedTypeName name="java.lang.NoSuchMethodException"/>
+<fullyQualifiedTypeName name="org.springframework.aop.aspectj.AspectJExpressionPointcut"/>
 </qualifiedTypeNameHistroy>

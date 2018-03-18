@@ -1,0 +1,6 @@
+package springbook.learningtest.springbook.pointcut;
+
+public interface TargetInterface {
+	public void hello();
+	
+}

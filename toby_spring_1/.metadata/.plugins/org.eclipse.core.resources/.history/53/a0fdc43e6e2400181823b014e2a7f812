@@ -1,5 +1,0 @@
-package springbook.user.service;
-
-public static TestUserServiceException extends Exception {
-
-}
