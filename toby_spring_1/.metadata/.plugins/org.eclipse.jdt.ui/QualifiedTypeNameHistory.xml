@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="springbook.user.dao.UserDao"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.lang.UnsupportedOperationException"/>
 <fullyQualifiedTypeName name="springbook.user.domian.Level"/>
 <fullyQualifiedTypeName name="springbook.user.service.UserServiceTest.MockUserDao"/>
@@ -60,4 +58,6 @@
 <fullyQualifiedTypeName name="java.lang.SecurityException"/>
 <fullyQualifiedTypeName name="java.lang.NoSuchMethodException"/>
 <fullyQualifiedTypeName name="org.springframework.aop.aspectj.AspectJExpressionPointcut"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="org.springframework.dao.TransientDataAccessResourceException"/>
 </qualifiedTypeNameHistroy>
