@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="java.lang.UnsupportedOperationException"/>
 <fullyQualifiedTypeName name="springbook.user.domian.Level"/>
 <fullyQualifiedTypeName name="springbook.user.service.UserServiceTest.MockUserDao"/>
 <fullyQualifiedTypeName name="org.mockito.ArgumentCaptor"/>
@@ -35,8 +33,6 @@
 <fullyQualifiedTypeName name="springbook.learningtest.jdk.UppercaseHandler"/>
 <fullyQualifiedTypeName name="springbook.learningtest.jdk.HelloTarget"/>
 <fullyQualifiedTypeName name="org.springframework.transaction.PlatformTransactionManager"/>
-<fullyQualifiedTypeName name="org.springframework.transaction.TransactionStatus"/>
-<fullyQualifiedTypeName name="org.springframework.transaction.support.DefaultTransactionDefinition"/>
 <fullyQualifiedTypeName name="org.springframework.aop.ClassFilter"/>
 <fullyQualifiedTypeName name="java.lang.Object"/>
 <fullyQualifiedTypeName name="org.springframework.aop.Pointcut"/>
@@ -60,4 +56,8 @@
 <fullyQualifiedTypeName name="org.springframework.aop.aspectj.AspectJExpressionPointcut"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="org.springframework.dao.TransientDataAccessResourceException"/>
+<fullyQualifiedTypeName name="org.springframework.transaction.support.DefaultTransactionDefinition"/>
+<fullyQualifiedTypeName name="org.springframework.transaction.TransactionStatus"/>
+<fullyQualifiedTypeName name="org.springframework.transaction.annotation.Transactional"/>
+<fullyQualifiedTypeName name="org.springframework.test.annotation.Rollback"/>
 </qualifiedTypeNameHistroy>
