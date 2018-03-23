@@ -5,7 +5,32 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2018-03-21T14:32:00Z</updated>
+  <updated>2018-03-22T14:37:22Z</updated>
+  <entry>
+    <title>Spring Tool Suite 3.9.3 released</title>
+    <link rel="alternate" href="https://spring.io/blog/2018/03/22/spring-tool-suite-3-9-3-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Martin Lippert</name>
+    </author>
+    <id>tag:spring.io,2018-03-22:3215</id>
+    <updated>2018-03-22T14:37:22Z</updated>
+    <content type="html">&lt;p&gt;Dear Spring Community,&lt;/p&gt;
+&lt;p&gt;I am happy to announce the 3.9.3 release of the Spring Tool Suite, our Eclipse-based tooling.&lt;/p&gt;
+&lt;p&gt;Highlights from this release include:&lt;/p&gt;
+&lt;ul&gt;&#xD;
+&lt;li&gt;updated to Eclipse Oxygen.3 release (https://www.eclipse.org/oxygen/noteworthy/)&lt;/li&gt;&#xD;
+&lt;li&gt;Pivotal tc Server updated to 3.2.9&lt;/li&gt;&#xD;
+&lt;li&gt;updated to work with Spring 5 and Spring Boot 2&lt;/li&gt;&#xD;
+&lt;/ul&gt;
+&lt;p&gt;To download the distributions, please go visit:&lt;/p&gt;
+&lt;ul&gt;&#xD;
+&lt;li&gt;Spring Tool Suite: &lt;a href="https://spring.io/tools/sts/all"&gt;https://spring.io/tools/sts/all&lt;/a&gt;&lt;/li&gt;&#xD;
+&lt;/ul&gt;
+&lt;p&gt;Detailed new and noteworthy notes can be found here: &lt;a href="http://docs.spring.io/sts/nan/v393/NewAndNoteworthy.html"&gt;STS 3.9.3 New &amp;amp; Noteworthy&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;STS 3.9.4 is scheduled to be released on top of Eclipse Oxygen.3a (4.7.3a) in late April 2018.&lt;/p&gt;
+&lt;p&gt;Enjoy!&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>It’s never been a better time to be a Spring Developer</title>
     <link rel="alternate" href="https://spring.io/blog/2018/03/21/it-s-never-been-a-better-time-to-be-a-spring-developer" />
@@ -1446,25 +1471,5 @@ dependencies {&#xD;
     ...&#xD;
 }
 &lt;/code&gt;&lt;/pre&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Security OAuth Boot 2 Auto-config 2.0.0 Released</title>
-    <link rel="alternate" href="https://spring.io/blog/2018/03/01/spring-security-oauth-boot-2-auto-config-2-0-0-released" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Joe Grandja</name>
-    </author>
-    <id>tag:spring.io,2018-03-01:3197</id>
-    <updated>2018-03-01T20:53:06Z</updated>
-    <content type="html">&lt;div class="paragraph"&gt;
-&lt;p&gt;I&amp;#8217;m pleased to announce the release of &lt;a href="https://github.com/spring-projects/spring-security-oauth2-boot"&gt;Spring Security OAuth Boot 2 Auto-config&lt;/a&gt; 2.0.0.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;This project is intended to be used to help users transition between the old Spring Security OAuth 2.x support and the &lt;a href="https://spring.io/blog/2018/01/30/next-generation-oauth-2-0-support-with-spring-security"&gt;Next Generation OAuth 2.0 Support in Spring Security 5&lt;/a&gt;. It provides users of Spring Security OAuth 2.x the same auto-configuration capabilities in a Spring Boot 2.0 based application that is currently available in Spring Boot 1.5.x. For more details please refer to the &lt;a href="https://docs.spring.io/spring-security-oauth2-boot/docs/current-SNAPSHOT/reference/htmlsingle/"&gt;documentation&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;&lt;a href="https://github.com/spring-projects/spring-security-oauth2-boot/"&gt;GitHub&lt;/a&gt; |
-&lt;a href="https://docs.spring.io/spring-security-oauth2-boot/docs/current-SNAPSHOT/reference/htmlsingle/"&gt;Reference&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-security"&gt;Help&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;</content>
   </entry>
 </feed>

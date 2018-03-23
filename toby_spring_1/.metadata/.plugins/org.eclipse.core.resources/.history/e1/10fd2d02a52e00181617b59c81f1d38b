@@ -1,0 +1,11 @@
+package springbook.user.sqlservice;
+
+public class XmlSqlService implements SqlService {
+
+	@Override
+	public String getSql(String key) throws SqlRetrievalFailureException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
